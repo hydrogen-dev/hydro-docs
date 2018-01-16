@@ -5,6 +5,9 @@ Documentation for Project Hydro - The Fintech Blockchain
 <H3>Resources</H3>
 <p><a href="https://github.com/hydrogen-dev/smart-contract">Hydro Smart Contract</a></p>
 <p><a href="https://www.hydrogenplatform.com/sign-up" target="_blank">Hydrogen Developer Signup</a></p>
+<p><a href="https://www.hydrogenplatform.com/Hydro_White_Paper.pdf" target="_blank">Hydro White Paper</a></p>
+<p><a href="https://www.youtube.com/watch?v=Rnic0JvXvPg&t=348s" target="_blank">Hydro Intro Video</a></p>
+<p><a href="http://www.projecthydro.com" target="_blank">Project Hydro Details</a></p>
 <H2>Getting Started</H2>
 <H3>Registration</H3>
 <p>You must <a href="https://www.hydrogenplatform.com/sign-up">register with Hydrogen</a> to become a developer. Once your application has been approved we will provide you an API username and key which are required to make calls to the API.</p>
