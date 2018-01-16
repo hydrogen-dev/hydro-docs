@@ -26,7 +26,7 @@ Documentation for the Hydro Blockchain
 </p>
 </ul>
 <H3>Step Two: Performing the Raindrop</H3>
-<p>The owner of the Hydro address who performed the challenge must now authenticate on the Hydro smart contract, which needs to happen outside of the Hydro API. This can be done in a few ways:</p>
+<p>The owner of the Hydro address who performed the challenge must now authenticate on the <a href="https://github.com/hydrogen-dev/smart-contract">Hydro Smart Contract</a>, which needs to happen outside of the Hydro API. This can be done in a few ways:</p>
 <h4><em>Manually through a service such as Ethereum Wallet</em></h4>
 <ul>
 <p>1. Open the Contracts tab and click "Watch Contract"</p>
