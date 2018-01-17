@@ -1,20 +1,21 @@
 # hydro-docs
-Documentation for Project Hydro - The Fintech Blockchain
-<H2>Introduction</H2>
-<p>Hydro is the blockchain application of <a href="https://www.hydrogenplatform.com" target="_blank">Hydrogen</a>, an API platform that allows developers to build sophisticated fintech apps in minutes. We developed Hydro with the goal of creating a more secure, transparent, low cost, and accessible financial ecosystem for billions around the globe.</p>
-<H3>Resources</H3>
-<p><a href="https://github.com/hydrogen-dev/smart-contract">Hydro Smart Contract</a></p>
+<p>API Documentation for Project Hydro - The Fintech Blockchain</p>
+<H1>Introduction</H1>
+<p>Hydro is the blockchain application of <a href="https://www.hydrogenplatform.com" target="_blank">Hydrogen</a>, an API platform that allows developers to build sophisticated fintech apps in minutes. Hydro enables private financial systems to seamlessly leverage the public blockchain. Cloud applications throughout the financial services ecosystem can now benefit from the power of smart contracts, creating more secure, transparent, and low cost financial products globally.</p>
+<H2>Resources</H2>
+<p><a href="https://github.com/hydrogen-dev/smart-contract">Hydro Smart Contracts</a></p>
 <p><a href="https://www.hydrogenplatform.com/sign-up" target="_blank">Hydrogen Developer Signup</a></p>
-<p><a href="https://www.hydrogenplatform.com/Hydro_Raindrop_White_Paper.pdf" target="_blank">Hydro Raindrop White Paper</a></p>
-<p><a href="https://www.youtube.com/watch?v=Rnic0JvXvPg&t=348s" target="_blank">Hydro Raindrop Intro Video</a></p>
 <p><a href="http://www.projecthydro.com" target="_blank">Project Hydro Details</a></p>
-<H2>Getting Started</H2>
-<H3>Registration</H3>
+<H2>Products</H2>
+<H3>Authentication - "Raindrop"</H3>
+<p>Our first product release is "Raindrop," which allows developers to utilize the blockchain as an authentication mechanism in their applications.</p>
+<p><a href="https://www.hydrogenplatform.com/Hydro_Raindrop_White_Paper.pdf" target="_blank">Raindrop White Paper</a></p>
+<p><a href="https://www.youtube.com/watch?v=Rnic0JvXvPg&t=348s" target="_blank">Raindrop Intro Video</a></p>
+<br/>
+<H1>Getting Started</H1>
+<H2>Registration</H2>
 <p>You must <a href="https://www.hydrogenplatform.com/sign-up">register with Hydrogen</a> to become a developer. Once your application has been approved we will provide you an API username and key which are required to make calls to the API.</p>
-<H3>Base Url:</H3>
-<p>Sandbox: NOT YET DEPLOYED</p>
-<p>Live: NOT YET DEPLOYED</p>
-<h3>Whitelisting</h3>
+<h2>Whitelisting</h2>
 <p>You must whitelist every user you desire to authenticate with this service. This can be an end user or another developer utilizing your platform/API.</p>
 <p>Whitelisted addresses will be stored both on the blockchain and in our private database. Each address is tied directly to your API key.</p> 
 <p>All authentication requests will have to be sent with this username/key combo and a whitelisted <code>hydroAddressId</code> which is created one time on initial setup using the following process:</p>
@@ -23,6 +24,10 @@ Documentation for Project Hydro - The Fintech Blockchain
 <p>2. Returns <code>hydroAddressId</code> if the address has been successfully whitelabeled</p>
 <p>3. The user must use the <code>hydroAddressId</code> for all subsequent API calls. For security purposes, this id will only be generated one time. Please store it in a safe place such as a database or key file. If the hydroAddressId is lost, the user will need to whitelist a new wallet address and potentially transfer any hydro over.</p>
 </ul>
+<H2>Base Url</H2>
+<p><code>https://api.hydrogenplatform.com/hydro/v1</code></p>
+<br/>
+<H1><a name="#raindrop">Raindrop API Documentation</a></H1>
 <H2>Instructions</H2>
 <p>After you have been setup in our system it's now time to use our Authentication API called "Raindrop". Authentication is a 3 step process: requesting a challenge, performing the raindrop, and final authentication.</p>
 <H3>Step One: Requesting a Challenge</H3>
