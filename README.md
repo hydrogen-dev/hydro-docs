@@ -1,6 +1,6 @@
 # Project Hydro Documentation
 <p>API Documentation for Project Hydro - The Fintech Blockchain</p>
-<br/>
+<img src="https://www.hydrogenplatform.com/images/logo_hydro.png">
 <H1>Introduction</H1>
 <p>Hydro is the blockchain application of <a href="https://www.hydrogenplatform.com" target="_blank">Hydrogen</a>, an API platform that allows developers to build sophisticated fintech apps in minutes. Hydro enables private financial systems to seamlessly leverage the public blockchain. Cloud applications throughout the financial services ecosystem can now benefit from the power of smart contracts, creating more secure, transparent, and low cost financial products globally.</p>
 <H2>Resources</H2>
@@ -12,7 +12,6 @@
 <p>Our first product release is "Raindrop," which allows developers to utilize the blockchain as an authentication mechanism in their applications.</p>
 <p><a href="https://www.hydrogenplatform.com/Hydro_Raindrop_White_Paper.pdf" target="_blank">Raindrop White Paper</a></p>
 <p><a href="https://www.youtube.com/watch?v=Rnic0JvXvPg&t=348s" target="_blank">Raindrop Intro Video</a></p>
-<br/>
 <H1>Getting Started</H1>
 <H2>Registration</H2>
 <p>You must <a href="https://www.hydrogenplatform.com/sign-up">register with Hydrogen</a> to become a developer. Once your application has been approved we will provide you an API username and key which are required to make calls to the API.</p>
