@@ -12,6 +12,7 @@
 <p>Our first product release is "Raindrop," which allows developers to utilize the blockchain as an authentication mechanism in their applications.</p>
 <p><a href="https://www.hydrogenplatform.com/Hydro_Raindrop_White_Paper.pdf" target="_blank">Raindrop White Paper</a></p>
 <p><a href="https://www.youtube.com/watch?v=Rnic0JvXvPg&t=348s" target="_blank">Raindrop Intro Video</a></p>
+<br/>
 <H1>Getting Started</H1>
 <H2>Registration</H2>
 <p>You must <a href="https://www.hydrogenplatform.com/sign-up">register with Hydrogen</a> to become a developer. Once your application has been approved we will provide you an API username and key which are required to make calls to the API.</p>
