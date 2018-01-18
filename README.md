@@ -1,5 +1,6 @@
-# hydro-docs
+# Project Hydro Documentation
 <p>API Documentation for Project Hydro - The Fintech Blockchain</p>
+<br/>
 <H1>Introduction</H1>
 <p>Hydro is the blockchain application of <a href="https://www.hydrogenplatform.com" target="_blank">Hydrogen</a>, an API platform that allows developers to build sophisticated fintech apps in minutes. Hydro enables private financial systems to seamlessly leverage the public blockchain. Cloud applications throughout the financial services ecosystem can now benefit from the power of smart contracts, creating more secure, transparent, and low cost financial products globally.</p>
 <H2>Resources</H2>
