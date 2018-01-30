@@ -43,7 +43,7 @@
 <ul>
 <p>1. Open the Contracts tab and click "Watch Contract"</p>
 <p>2. For Contract Address use:</p>
-<p>Testnet: <code>0xed19C73C0caB93864986743378032798F1efA994</code></p>
+<p>Testnet: <code>0xEFb8Ba35C4C502EA9035e093F59925C4B5B61482</code></p>
 <p>Mainnet: <code>NOT YET DEPLOYED</code></p>
 <p>3. For Json Interface use:</p>
 <p>Testnet: <a href="https://gist.github.com/AndyHydro/5df3a80a29bf61986db668ea6c90d4db">Testnet Gist</a></p>
@@ -51,8 +51,8 @@
 <p>3. Click on the added contract and from the function dropdown on the left select "Authenticate"</p>
 <ul>
 - For the value put the <code>amount</code> returned from challenge<br/>
-- For Data put the <code>challengeString</code> returned from challenge<br/>
-- For the partner id put the <code>partnerId</code> returned from challenge<br/>
+- For Data put the <code>challenge</code> returned from challenge<br/>
+- For the partner id put the <code>partner_id</code> returned from challenge<br/>
 </ul>
 <p>4. Once this is executed the raindrop has been completed. The transaction will fail if any values sent are incorrect.</p>
 </ul>
