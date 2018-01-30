@@ -19,11 +19,11 @@
 <h2>Whitelisting</h2>
 <p>You must whitelist every user you desire to authenticate with this service. This can be an end user or another developer utilizing your platform/API.</p>
 <p>Whitelisted addresses will be stored both on the blockchain and in our private database. Each address is tied directly to your API key.</p> 
-<p>All authentication requests will have to be sent with this username/key combo and a whitelisted <code>hydroAddressId</code> which is created one time on initial setup using the following process:</p>
+<p>All authentication requests will have to be sent with this username/key combo and a whitelisted <code>hydro_address_id</code> which is created one time on initial setup using the following process:</p>
 <ul>
 <p>1. POST to <code>/whitelist/{address}</code> with your API username/key combo, and the user’s Ethereum/Hydro address.</p>
-<p>2. Returns <code>hydroAddressId</code> if the address has been successfully whitelabeled</p>
-<p>3. The user must use the <code>hydroAddressId</code> for all subsequent API calls. For security purposes, this id will only be generated one time. Please store it in a safe place such as a database or key file. If the hydroAddressId is lost, the user will need to whitelist a new wallet address and potentially transfer any hydro over.</p>
+<p>2. Returns <code>hydro_address_id</code> if the address has been successfully whitelabeled</p>
+<p>3. The user must use the <code>hydro_address_id</code> for all subsequent API calls. For security purposes, this id will only be generated one time. Please store it in a safe place such as a database or key file. If the hydro_address_id is lost, the user will need to whitelist a new wallet address and potentially transfer any hydro over.</p>
 </ul>
 <H2>Base Url</H2>
 <p><code>https://api.hydrogenplatform.com/hydro/v1</code></p>
@@ -33,7 +33,7 @@
 <p>After you have been setup in our system it's now time to use our Authentication API called "Raindrop". Authentication is a 3 step process: requesting a challenge, performing the raindrop, and final authentication.</p>
 <H3>Step One: Requesting a Challenge</H3>
 <ul>
-<p>1. POST to <code>/challenge?hydroAddressId={hydroAddressId}</code> with the appropriate <code>hydroAddressId</code> received from initial whitelisting. You must also provide your API username and key in the POST body. This response may take some time, as the challenge must be stored on the Ethereum blockchain.</p>
+<p>1. POST to <code>/challenge?hydro_address_id={hydro_address_id}</code> with the appropriate <code>hydro_address_id</code> received from initial whitelisting. You must also provide your API username and key in the POST body. This response may take some time, as the challenge must be stored on the Ethereum blockchain.</p>
 <p>2. This POST will return a JSON object with <code>amount</code>, <code>challengeString</code> and <code>partnerId</code>. Make sure to store these values as you will need them for the raindrop.</p>
 </p>
 </ul>
@@ -51,7 +51,7 @@
 <p>3. Click on the added contract and from the function dropdown on the left select "Authenticate"</p>
 <ul>
 - For the value put the <code>amount</code> returned from challenge<br/>
-- For Data put the <code>challenge</code> returned from challenge<br/>
+- For challenge put the <code>challenge</code> returned from challenge<br/>
 - For the partner id put the <code>partner_id</code> returned from challenge<br/>
 </ul>
 <p>4. Once this is executed the raindrop has been completed. The transaction will fail if any values sent are incorrect.</p>
@@ -64,7 +64,7 @@
 <H3>Step Three: Authentication</H3>
 <p>Once the raindrop has been completed and confirmed in the blockchain final authentication can be performed.</p>
 <ul>
-<p>1. POST to <code>/authenticate?hydroAddressId={hydroAddressId}</code> with the correct <code>hydroAddressId</code>. You must also provide your username and key in the post body</p>
+<p>1. POST to <code>/authenticate?hydro_address_id={hydro_address_id}</code> with the correct <code>hydro_address_id</code>. You must also provide your username and key in the post body</p>
 <p>2. This will return a boolean value, which allows developers to use Hydro Auth as just one factor of a multifactor authentication alongside a token based system such as OAuth or JWT.</p>
 <ul>
 - If true is returned, the authentication process should continue<br/>
