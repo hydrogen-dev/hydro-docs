@@ -1,4 +1,4 @@
 # Hydro Snowflake Whitepaper
-This is the whitepaper outlining our Snowflake Identity Protocol. We believe that this open framework protocol will create a stardard in the decentralized identity space that will allow for open and closed projects to easily access user data in a decentralized manner.
+Snowflake is an Identity Protocol. We believe that by creating a modular, open framework in the decentralized identity space, we will help individuals craft their digital identities and enable projects of all flavors and varieties to easily and securely access this data in a decentralized manner.
 
-This is currently a DRAFT of the paper and many things will likely change. We would love to community members to comment on typos/ideas/insights into what we have.
+This whitepaper is *currently a DRAFT*, meaning aspects of it are likely to change. We would love for community members to suggest ideas, offer insights, or even fix typos.

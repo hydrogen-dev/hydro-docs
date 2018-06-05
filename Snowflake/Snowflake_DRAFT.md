@@ -1,10 +1,9 @@
-# HYDRO SNOWFLAKE: DECENTRALIZED IDENTITY MANAGEMENT
+# Hydro Snowflake: Decentralized Identity Management
 ### June 2018
 
 _______________________________________________________________
 
-
-## TABLE OF CONTENTS
+## Table of Contents
 - [Abstract](#abstract)
 - [Background](#background)
   - [The Origins Of Identity](#the-origins-of-identity)
@@ -193,10 +192,10 @@ While validators attach their validations to a user’s snowflake, resolvers are
 Business entities are any applications or dApps that build logic into their applications that rely on information tied to a user’s snowflake. For instance, if a user has tied credit-related information to their snowflake through one or several third-party dApps, a business entity might use that metadata in order to determine whether that user would be approved for a certain loan.
 
 ### Snowflake Smart Contracts
-The core snowflake contract stores data, resolvers, and HYDRO balances. It allows users to mint tokens, set fields, and deposit HYDRO. When immutable fields such as Name/DoB are changed, users must mint a new token. When other fields are changed, their resolvers are reset. Resolvers allow users to link their snowflake to external smart contracts which house more data, such as nonbinary types of validations, or if they are an accredited investor. Users, resolvers, or any interested party will be able to deposit HYDRO tokens to the Snowflake smart contract. This will facilitate staking requirements, payments, and other token functionality that will be integrated seamlessly into the Hydro ecosystem as it develops.
+The core snowflake contract stores data, resolvers, and HYDRO balances. It allows users to mint tokens, set fields, and deposit HYDRO. When immutable fields such as Name/DoB are changed, users must mint a new token. When other fields are changed, their resolvers are reset. Resolvers allow users to link their snowflake to external smart contracts which house more data, such as non-binary validations, or if they are an accredited investor. Users, resolvers, or any interested party will be able to deposit HYDRO tokens to the Snowflake smart contract. This will facilitate staking requirements, payments, and other token functionality that will be integrated seamlessly into the Hydro ecosystem as it develops.
 
 3rd party dApps:
-- Hydrogen will create the initial core Snowflake data validation dApp which is a “gateway” to compliant third-party DApps (we will have guidelines about how these apps should look)
+- Hydrogen will create the initial core Snowflake data validation dApp which is a “gateway” to compliant third-party dApps (we will have guidelines about how these apps should look)
 - Hydrogen will create logic for dApps to allow sending, staking, and fees in Hydro
 - All dApps would want users to set their contract address as a resolver
 
@@ -220,7 +219,7 @@ A user’s Snowflake acts as an anchor point for data from all that user’s dAp
 ### Snowflake API and Hydro Mobile App
 Hydrogen’s Hydro API will facilitate user and business entity interactions with Snowflake smart contracts. The API provides end users the ability to register their HydroIDs, a prerequisite to minting their Snowflakes, through the Raindrop API integration into the Hydro mobile app. In the next iteration, users will be able to mint their own Snowflake associated with their HydroID through the Hydro mobile app while the Hydro API handles the direct interaction with the blockchain. The UI on their mobile app will allow them to observe validations they have obtained from addresses whitelisted by the Hydro API. They will also be able to set resolvers through their Hydro mobile app to attach a broader range of metadata to their snowflake.
 
-Business entities will be able to use the Hydro API to query the ethereum blockchain for information contained within the Hydro ecosystem. The API will provide on-chain information to applications in a congestible format that can be easily encoded into their business logic without requiring them to have blockchain developers.
+Business entities will be able to use the Hydro API to query the Ethereum blockchain for information contained within the Hydro ecosystem. The API will provide on-chain information to applications in a digestible format that can be easily encoded into their business logic without requiring them to have blockchain developers.
 
 ### Mirroring The ERC-721 Contract Standard
 ERC-20 tokens, such as HYDRO, share the characteristic of fungibility, meaning each token is seamlessly and equally interchangeable with any other. This makes sense for tokens in the ERC-20 standard since each token has the same functionality as any other token. For an identity protocol, however, non-fungibility drives the meaningfulness behind ownership. If we were able to swap our identities out amongst ourselves with no difference, those identities would carry no value to any observer. Ethereum Request for Comments 721, or ERC-721, is an Ethereum proposal introduced by Dieter Shirley in 2017. Although HYDRO the token itself is built on the ERC-20 standard, our Snowflake protocol’s smart contracts more closely mirror the dynamics found in ERC-721 tokens. These are known as “non-fungible” tokens.
@@ -236,7 +235,7 @@ The open framework of Snowflake will make products, platforms, apps, and dApps b
 Through integration with global KYC providers as validators, Hydro can create a standard one-touch digital account onboarding standard that can adapt to the wide range of KYC standards existent in today’s world.
 
 ### Validator Rating System
-This simple dApp would create a upvoting/downvoting system for validators across multiple identity areas. A reputation-based scoring system would create incentive-driven honesty in votes. This decentralized reputation-building can prescribe greater meaning to some validators than a binary process.
+This simple dApp would create an upvoting/downvoting system for validators across multiple identity areas. A reputation-based scoring system would create incentive-driven honesty in votes. This decentralized reputation-building can prescribe greater meaning to some validators than a binary process.
 ### Machine Learning Validation Standard
 The Hydrogen platform contains the Ion AutoML API. With sufficient validations globally, a product can be created using the AutoML API that rates, sorts, ranks, flags, and removes validations and validators in a decentralized and data driven way. Smart contracts can be integrated on top of the AutoML capabilities for transparency.
 
@@ -280,7 +279,7 @@ _______________________________________________________________
 
 PNAS.org - http://www.pnas.org/content/110/32/13216
 
-Social Security Adminsitration - https://www.ssa.gov/policy/docs/ssb/v69n2/v69n2p55.html
+Social Security Administration - https://www.ssa.gov/policy/docs/ssb/v69n2/v69n2p55.html
 
 History Channel - https://www.history.com/news/the-history-of-birth-certificates-is-shorter-than-you-might-think
 
