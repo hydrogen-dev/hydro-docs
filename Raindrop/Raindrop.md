@@ -335,11 +335,11 @@ The Hydro team believes the framework set forth can be the standard security inf
 
 Sources:
 
-Ethereum; Merkling in Ethereum
-Trend Micro; What Do Hackers Do With Your Stolen Identity?
-Javelin Strategy & Research; The 2017 Identity Fraud Study
-Symantec; Internet Security Threat Report
-Risk Based Security; 2016 Data Breach Trends - Year in Review
-Thales; 2017 Thales Data Threat Report – Financial Services Edition
-Apache.org; Apache Struts 2 Documentation - S2-052
-Joseph Poon and Vitalik Buterin; Plasma: Scalable Autonomous Smart Contracts
+Ethereum; [Merkling in Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
+Trend Micro; [What Do Hackers Do With Your Stolen Identity?](https://www.trendmicro.com/vinfo/au/security/news/cybercrime-and-digital-threats/what-do-hackers-do-with-your-stolen-identity)
+Javelin Strategy & Research; [The 2017 Identity Fraud Study](https://www.javelinstrategy.com/press-release/identity-fraud-hits-record-high-154-million-us-victims-2016-16-percent-according-new)
+Symantec; [Internet Security Threat Report](https://www.symantec.com/content/dam/symantec/docs/reports/istr-22-2017-en.pdf)
+Risk Based Security; [2016 Data Breach Trends - Year in Review](https://pages.riskbasedsecurity.com/hubfs/Reports/2016%20Year%20End%20Data%20Breach%20QuickView%20Report.pdf)
+Thales; [2017 Thales Data Threat Report – Financial Services Edition](https://dtr-fin.thalesesecurity.com/)
+Apache.org; [Apache Struts 2 Documentation - S2-052](Apache Struts 2 Documentation - S2-052)
+Joseph Poon and Vitalik Buterin; [Plasma: Scalable Autonomous Smart Contracts](https://plasma.io/plasma.pdf)
