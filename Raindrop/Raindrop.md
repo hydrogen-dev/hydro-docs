@@ -200,15 +200,15 @@ Below is an outline of the Server-Side Raindrop authentication process, which ca
 
 Initialization begins with a System (e.g. Hydrogen) registering to use Hydro and obtaining credentials, enabling the system to communicate with the blockchain via the Hydro module. The System onboards an Accessor (e.g. a financial institution) who registers a public address, and then passes the registered address to Hydro. This address is immutably written onto the blockchain to a whitelist stored in a Hydro smart contract. The System receives a confirmation that the address was whitelisted, which can also be verified as a publicly viewable event. System registration need only occur once, while Accessor whitelisting need only occur once per Accessor.
 
-![Server-Side Raindrop: Initialization](./_assets/Server-Side Raindrop_ Initialization.png)
+![Server-Side Raindrop: Initialization](./_assets/Server-SideRaindrop_Initialization.png)
 
 After Initialization is complete, the core of the Hydro authentication process can begin. The Accessor, who must execute a transaction, jumpstarts this process by requesting the transactional details from the System, and the System routes the request to the Hydro API. The Hydro API generates a new set of transactional parameters, stores certain details immutably on the blockchain, and returns the full details to the Accessor via the System. The Accessor, equipped with all required information, conducts a transaction from the registered address to a method in the Hydro smart contract. If the sender's address is not whitelisted, the action is rejected - otherwise, it is recorded in the smart contract. It is important to note that this transaction should occur outside of the System, directly from the Accessor to the Blockchain, as it requires the Accessor's private key (which only the Accessor should be able to obtain).
 
-![Server-Side Raindrop: Authentication Attempt](./_assets/Server-Side Raindrop_ Authentication Attempt.png)
+![Server-Side Raindrop: Authentication Attempt](./_assets/Server-SideRaindrop_AuthenticationAttempt.png)
 
 The final step of the process is Validation. In this step, the Accessor officially requests access to the System via the System's established mechanism. Prior to implementing any of its standard authentication protocols, the System asks Hydro whether or not the Accessor has performed a valid transaction. Hydro interfaces with the smart contract, checks for validity, and responds with a true/false designation. The System is able to decide how it should proceed based on this designation - if it is false, the System can deny access, and if it is true, the System can grant access.
 
-![Server-Side Raindrop: Validation](./_assets/Server-Side Raindrop_ Validation.png)
+![Server-Side Raindrop: Validation](./_assets/Server-SideRaindrop_Validation.png)
 
 If we consider the base System credentials - or whatever existing System protocols that are in place - to broadly be one layer of authentication, it is critical that the Hydro authentication layer provides a useful second layer. By examining the two primary attack vectors, we can readily confirm its usefulness:
 
@@ -275,15 +275,15 @@ Initialization includes User setup and a subsequent connection between User and 
 
 These details are routed through the Hydro API and stored on-chain in a Hydro smart contract, and the unique Hydro ID is displayed to the User. The User is then able to provide the Hydro ID to the Application, which the Application in turn uses to register a link between itself and the corresponding User via the Hydro API. Finally, the Hydro API communicates any resulting link to the Hydro Mobile App and the authentication process is ready to begin.
 
-![Client-Side Raindrop: Initialization](./_assets/Client-Side Raindrop_ Initialization.png)
+![Client-Side Raindrop: Initialization](./_assets/Client-SideRaindrop_Initialization.png)
 
 Once the initial set up is complete and a link is established, the User is able to attempt an authentication when prompted by some triggering event. This trigger can be anything, with a common example being a login attempt on the Application's login portal. To kickstart the authentication attempt, the Application generates a message and relays it to the User. The User then inputs the message in the Hydro Mobile App, where it is signed with the User's private key (stored locally on the User's device, inside the Hydro Mobile App). The signed message is routed to the Hydro API and it is ready to be validated.
 
-![Client-Side Raindrop: Authentication Attempt](./_assets/Client-Side Raindrop_ Authentication Attempt.png)
+![Client-Side Raindrop: Authentication Attempt](./_assets/Client-SideRaindrop_AuthenticationAttempt.png)
 
 The final stage in the process is the validation of the User's signed message. The Application requests a validation via the Hydro API, and the signed message is sent to the blockchain. A function housed in a Hydro smart contract then recovers the public address from the signed message. If this public address corresponds to the Hydro ID of the appropriate User (which was recorded during the initial setup phase), the validation is successful. Depending on the result of the validation, the Application can allow or disallow the User from proceeding.
 
-![Client-Side Raindrop: Validation](./_assets/Client-Side Raindrop_ Validation.png)
+![Client-Side Raindrop: Validation](./_assets/Client-SideRaindrop_Validation.png)
 
 ### Opening Raindrop To The Public
 While these blockchain-based authentication frameworks were initially architected to help secure the Hydrogen API ecosystem, they are widely applicable to many different kinds of platforme. Because we feel that others can potentially benefit, we are opening it up for use.
