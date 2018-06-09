@@ -304,9 +304,9 @@ The immutability of a public blockchain offers new ways to enhance security of p
 
 This paper has shown three important things:
 
-Public blockchains can add value in financial services.
-The Hydro Raindrop can enhance security of private systems.
-There are immediate applications of the Hydro Raindrop within the Hydrogen API platform.
+1. Public blockchains can add value in financial services.
+2. The Hydro Raindrop can enhance security of private systems.
+3. There are immediate applications of the Hydro Raindrop within the Hydrogen API platform.
 
 The Hydro team believes the framework set forth can be the standard security infrastructure for a new model of hybrid private-public systems, which will benefit all stakeholders in the financial services industry and beyond.
 
