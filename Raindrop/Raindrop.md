@@ -120,7 +120,7 @@ Hydro differs from many existing blockchain initiatives, because it can exist in
 
 The scope of financial services platforms that can leverage Hydrogen is broad. These platforms can power virtually any experience, house any number of proprietary services, perform any private data operation, and deploy in any environment. This is enabled by Hydrogen's structural modularity and is synergistic with Hydro, acting as a complementary driver of adoption.
 
-##Raindrop
+## Raindrop
 Built on top of the Hydro public ledger is a blockchain-based authentication service, called Raindrop. This offers a layer of security that helps verify if an access request is coming from an appropriate source.
 
 Hydro Raindrop offers a way to enhance off-chain authentication protocols by incorporating blockchain mechanics as a component of a single- or multi-factor authentication process. This can add a useful layer of security to help thwart system breaches and data compromises.
