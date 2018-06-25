@@ -144,7 +144,7 @@ Validators are third parties who can vouch for the validity of data tied to a Sn
 
 Off-chain validators can act as parties trusted by individual actors in the decentralized ecosystem. Once the validation happens off-chain, an on-chain record is tied to a user’s Snowflake. Because nobody can impersonate a validator without access to their private keys, business entities can incorporate on-chain validations into any relevant business logic by querying the blockchain. If a user changes any of the data, it loses its prior validations along with any corresponding significance.
 
-A user can have a third party validate data by passing the plaintext of the data and the appropriate salt. The third pary can then hash the data and compare to what is stored on-chain. If it matches, it would merit a validation.
+For instance, a user could have a third party validate data by passing the plaintext of the data and the appropriate salt. The third party could then hash the data and compare to what is stored on-chain. If it matches, it would merit a validation.
 
 Validation may be conducted off-chain; for instance, date of birth validation can be verified by a government agency in-person. This validation might carry meaning when proving that you are above a certain age to buy a movie ticket, or when opening a new account at a bank. Alternatively, if a user acquires validations for an email address, they would be able to provide this email to applications without requiring an email confirmation process, without ever having to publicly reveal the email address.
 
@@ -170,6 +170,8 @@ Validators must stake in HYDRO tokens to participate in the ecosystem. Tokens ar
 
 This framework ensures that individuals and organizations serving as validators have an interest in validating with integrity and consistency. An application querying these validations may define any nature or level of validation they need for a given Snowflake to be deemed satisfactory; for instance, an application may only grant a user access to certain features if that user's Snowflake has been vouched for by certain whitelisted or known validators.
 
+The HYDRO token is not only intended to be a gateway into the ecosystem of dApps that can be built on top of Snowflake, but also a centerpiece for convenient programmatic transfers for all resolvers. Through Snowflake, users can set specific allowances for resolvers to withdraw HYDRO. The user sets the limits on allowed withdrawals on a per-resolver basis, streamlining replication of user-facing models that are currently managed through third-party financial institutions. Snowflake's flexibility with programmatic token transfers allows businesses to encode an arbitrary set of criteria into their business logic for recurrent processes, such as verifying membership within a particular group in order to offer discounted subscriptions for a product.
+
 As we will discuss later on, apps, dApps, products, or platforms built on top of Snowflake can also incorporate HYDRO tokens into their processes. For example, certain kinds of validations or actions may require on-chain HYDRO token transactions, where users would be required to maintain or transfer HYDRO balances.
 
 ### Open Framework
@@ -183,11 +185,11 @@ There are four entities involved in the Snowflake: users, validators, resolvers,
 ### Users
 Users mint their Snowflakes to represent their identities. They attach data to their Snowflakes and set resolvers in order to tie any form of metadata to their base Snowflake identities. Users can also maintain balances of HYDRO within Snowflakes, creating an easy and intuitive mechanism by which any dApp can interact with a user’s Snowflake. User data is either standard immutable data such name and date of birth, that can only be stored by the owner or approved validator, or non-standard mutable data such phone numbers and addresses that can be stored as a string or integer by the owner or by any address approved by the owner.
 
-### Validators
-A validator is simply a party that attaches itself to one or more fields in a given user’s Snowflake. The result is that each individual field is tied to a list of validators for a given user. While anybody who stakes HYDRO can cast validations for a user’s Snowflake, these validations only carry as much meaning as other parties ascribe to them. For instance, if a known and trusted KYC provider casts a validation on a user’s Snowflake, a business entity could observe that validation and consider the data in the Snowflake to be reliable. Any validation can be stored by any address in an integer format.
-
 ### Resolvers
 While validators attach validations to a Snowflake, resolvers are set by users themselves. Resolvers are dApps that contain metadata about a user. An intuitive example is CryptoKitties - setting CryptoKitties as a resolver can tie the ownership of certain kitties back to the user's Snowflake identity. If that setting were to be validated by reputable validators, it would enable them to prove ownership of a certain address that owns CryptoKitties without needing to expose or transact with that address.
+
+### Validators
+While validators are not included in the core Snowflake protocol, they add significant value when introduced at the dApp level. Resolvers built on Snowflake can encode any range of validation criteria. The simplest level would be a validation dApp in which a trusted KYC provider affirms whether a Snowflake is owned by a real person or not. Any Snowflake owner could complete KYC through the trusted party, set the validation dApp as a Resolver for their Snowflake, and prove that they exist to anybody else who also trusts the KYC party without ever meeting them. In practice, dApps can build nonbinary validation structures with a much more far-reaching range of implications in a variety of industries, with meaning derived from off-chain reputation, or their own native on-chain reputation protocols.  
 
 ### Business Entities
 Business entities are any applications or dApps that build logic into their applications that relies on information tied to a Snowflake. For instance, if a user has tied credit-related information to a Snowflake through one or several third-party dApps, a business entity might use that metadata in order to determine whether the user would be approved for a loan.
