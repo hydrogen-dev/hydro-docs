@@ -170,7 +170,9 @@ A critical part of financial onboarding is account creation. This typically invo
 #### Implications for Land & Real Estate Rights
 
 As indicated in the preamble, the right to private property has been viewed as an inalienable right since the Renaissance. In many parts of the world, the system for protecting these rights lies in municipal and local governments, using antiquated and easily corruptible systems. The Ice protocol provides an immediate and very cost effective way to securely store, sign, and immutably guarantee land rights to property owners. Ice makes these documents borderless and tamper proof, and the blockchain is not regulated by any single government body. There are multiple dApps built on top of Snowflake that can tie these documents to identities, which can be individuals, businesses, groups of people, tribes, or any other entity.
-Ice dApp Store
+
+##### Ice dApp Store
+
 Any financial institution, financial intermediary, software provider, or service provider can build a dApp that gets offered in the Ice dApp store. This makes Ice extremely powerful as a means to interact with offline and private financial document protocol that are popular in industries such as mortgage, lending, and insurance.  
 
 ## Risks
