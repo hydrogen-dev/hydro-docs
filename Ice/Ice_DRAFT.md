@@ -65,7 +65,7 @@ For thousands of years financial document were stored physically: on tablets, sc
 
 Cloud computing is a relatively new concept. In fact, the term was invented in 1997 by University of Texas PhD student, and now Emory University Professor, Ramnath Chellappa. Although used in the military for years, cloud computing wasn’t popularized in the business world until the 2000s, with the founding of Salesforce, and the start of Amazon’s Elastic Compute Cloud (EC2) in 2007, an infrastructure-as-a-service that allowed companies around the world to rent computing power to run their applications. Cloud storage for individuals quickly followed, with the 2007 creation of Dropbox, Inc, by MIT students. 
 
-Over time, the cost of cloud storage has decreased dramatically. A gigabyte of storage cost at the time of Salesforce’s founding was approximately $7.70, that is now as low as $0.02.
+Over time, the cost of cloud storage has decreased dramatically. A gigabyte of storage cost at the time of Salesforce’s founding was approximately $7.70, it is now as low as $0.02.
 
 #### The Centralization of Cloud Storage
 
