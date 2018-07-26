@@ -174,7 +174,7 @@ Ice dApp Store
 Any financial institution, financial intermediary, software provider, or service provider can build a dApp that gets offered in the Ice dApp store. This makes Ice extremely powerful as a means to interact with offline and private financial document protocol that are popular in industries such as mortgage, lending, and insurance.  
 
 ## Risks
-The central risk of the Ice protocol is the adoption of public blockchain infrastructure for document storage, signing, authentication, and validation. The Hydro team is reliant on nascent protocols such as IPFS, Storj, Sia, and MaidSafe to create viable decentralized cloud storage capabilities that can be linked to the on-chain Ice events. It is also unknown the cost of decentralized data storage, as the Ethereum network scales.
+The central risk of the Ice protocol is the adoption of public blockchain infrastructure for document storage, signing, authentication, and validation. The Hydro team is reliant on nascent protocols such as IPFS, Storj, Sia, and MaidSafe to create viable decentralized cloud storage capabilities that can be linked to the on-chain Ice events. The cost of decentralized data storage as the Ethereum network scales is also unknown.
 
 There have been private blockchain initiatives proposed by startups, governments, and infrastructure providers that threaten the core message of Ice. To combat the risk of low adoption and competition, it is imperative for the following things to happen:
 
