@@ -140,7 +140,7 @@ The Hydro token plays a vital role in the Ice ecosystem. Tokens are used in core
 
 #### Open Architecture Framework
 
-Like the Snowflake protocol, Ice is built with an open architecture. This means other document management solutions, both decentralized and centralized, can be hooked into the core Ice protocol. This is done through the Ice Application Programming Interface (API), or by building a dApp that interacts with the Ice smart contracts. Guides and tutorials will be provided by the core Hydro dev team to full leverage the power of Ice in other projects.
+Like the Snowflake protocol, Ice is built with an open architecture. This means other document management solutions, both decentralized and centralized, can be hooked into the core Ice protocol. This is done through the Ice Application Programming Interface (API), or by building a dApp that interacts with the Ice smart contracts. Guides and tutorials will be provided by the core Hydro dev team to fully leverage the power of Ice in other projects.
 
 ## Ice: Technical Details
 
