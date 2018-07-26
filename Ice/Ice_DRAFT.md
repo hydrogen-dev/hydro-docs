@@ -89,7 +89,7 @@ Because e-signatures typically consist of a typed or cursive font version of a s
 E-Signatures Leading To Fraud
 Loans, mortgages, and other complex financial transactions typically come with very lengthy consents, agreements, and contracts, along with intermediaries that process the documents. Fraud and forgery is increasingly easier in these industries, due to the ease of adding a fake e-signature to any of od the documents.
 
-According to a Forbes investigation, some unethical car dealers have used e-contracts to charge more than the agreed-upon sales price, tack on hundreds or thousands of dollars in extra add-ons that consumers didn’t want or agree to buy, or overcharge for government fees and engage in other illegal practices – such as e-signing consumers’ names without showing buyers the contract.
+According to a Forbes investigation, some unethical car dealers have used e-contracts to charge more than the agreed-upon sales price, tack on hundreds or thousands of dollars in extra add-ons that consumers didn’t want, or agree, to buy, or overcharge for government fees and engage in other illegal practices – such as e-signing consumers’ names without showing buyers the contract.
 
 
 ## Introducing Ice
