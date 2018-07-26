@@ -61,11 +61,11 @@ Financial documents are as old as human civilization itself. Many historians bel
 
 #### From Physical to Cloud
 
-For thousands of years financial document were stored physically: on tablets, scripts, or paper. The computer revolution has changed this paradigm.
+For thousands of years financial documents were stored physically: on tablets, scripts, or paper. The computer revolution has changed this paradigm.
 
 Cloud computing is a relatively new concept. In fact, the term was invented in 1997 by University of Texas PhD student, and now Emory University Professor, Ramnath Chellappa. Although used in the military for years, cloud computing wasn’t popularized in the business world until the 2000s, with the founding of Salesforce, and the start of Amazon’s Elastic Compute Cloud (EC2) in 2007, an infrastructure-as-a-service that allowed companies around the world to rent computing power to run their applications. Cloud storage for individuals quickly followed, with the 2007 creation of Dropbox, Inc, by MIT students. 
 
-Over time, the cost of cloud storage has decreased dramatically. A gigabyte of storage cost at the time of Salesforce’s founding was approximately $7.70, that is now as low as $0.02.
+Over time, the cost of cloud storage has decreased dramatically. A gigabyte of storage cost at the time of Salesforce’s founding was approximately $7.70, it is now as low as $0.02.
 
 #### The Centralization of Cloud Storage
 
@@ -79,17 +79,15 @@ For millennia, certain problems have repeated themselves with drafting, signing,
 
 Personal letters, official proclamations, tax records, and other documents were created by Egyptian scribes. The recording of events was so highly valued that Pharaoh Tutankhamen even included writing equipment in his tomb for the afterlife. During the Roman Empire the “Notarius” as they were called, served to prepare contracts, wills, and other important documents for a fee. The Knights Templar are credited with the creation of the modern system of banking, mortgages, and loans. The Clergy of the Order became important Notaries for all Templar business, official documents, & proclamations.
 
-The common theme throughout history has been the centralization of the notarization of documents. The most educated in societies were responsible for drafting financial documents, leading to immense power and corruptibility. Even as education has increased, the Notary still has power in modern times, to not draft documents, but verify parties have signed and agreed to contract terms. 
+The common theme throughout history has been the centralization of the notarization of documents. The most educated in societies were responsible for drafting financial documents, leading to immense power and corruptibility. Even as education has increased, the Notary still has power in modern times, not to draft documents, but verify parties have signed and agreed to contract terms. 
 
 Document tampering is another pitfall for financial documents. Seals have been used throughout history, in an attempt to combat tampering. The seal, typically in wax, has served to authenticate documents and their originality, yet there are guides that exist on how to falsify seals, break them, or replace them with simple tools. 
 
 #### Flaws with E-Signature Providers
 
-Because e-signatures typically consist of a typed or cursive font version of a signature, anyone with access to an internet can sign documents electronically on behalf of the intended signer. This includes relatives, business associates, secretaries, and even hackers. Even if a signer intend to electronically sign a document, a simple mistake such as leaving an open email connection or open WiFi can lead to access to potentially important documents. Imagine if this means signing an important business deal before the terms have been duly accepted. Can this then be disputed in court? The answer depends on jurisdiction and interpretation of electronic laws. 
-E-Signatures Leading To Fraud
-Loans, mortgages, and other complex financial transactions typically come with very lengthy consents, agreements, and contracts, along with intermediaries that process the documents. Fraud and forgery is increasingly easier in these industries, due to the ease of adding a fake e-signature to any of od the documents.
+Because e-signatures typically consist of a typed or cursive font version of a signature, anyone with access to the internet, or the host PC, can sign documents electronically on behalf of the intended signer. This includes relatives, business associates, secretaries, and even hackers. Even if a signer intended to electronically sign a document, a simple mistake such as leaving an open email connection or open WiFi can lead potentially important documents being accessed. Imagine if this means signing an important business deal before the terms have been duly accepted. Can this then be disputed in court? The answer depends on jurisdiction and interpretation of electronic laws. E-Signatures leading to loans, mortgages, and other complex financial transactions typically come with very lengthy consents, agreements, and contracts, along with intermediaries that process the documents. Fraud and forgery is increasingly easier in these industries, due to the ease of adding a fake e-signature to any of the documents.
 
-According to a Forbes investigation, some unethical car dealers have used e-contracts to charge more than the agreed-upon sales price, tack on hundreds or thousands of dollars in extra add-ons that consumers didn’t want or agree to buy, or overcharge for government fees and engage in other illegal practices – such as e-signing consumers’ names without showing buyers the contract.
+According to a Forbes investigation, some unethical car dealers have used e-contracts to charge more than the agreed-upon sales price, tack on hundreds or thousands of dollars in extra add-ons that consumers didn’t want, or agree, to buy, or overcharge for government fees and engage in other illegal practices – such as e-signing consumers’ names without showing buyers the contract.
 
 
 ## Introducing Ice
@@ -140,7 +138,7 @@ The Hydro token plays a vital role in the Ice ecosystem. Tokens are used in core
 
 #### Open Architecture Framework
 
-Like the Snowflake protocol, Ice is built with an open architecture. This means other document management solutions, both decentralized and centralized, can be hooked into the core Ice protocol. This is done through the Ice Application Programming Interface (API), or by building a dApp that interacts with the Ice smart contracts. Guides and tutorials will be provided by the core Hydro dev team to full leverage the power of Ice in other projects.
+Like the Snowflake protocol, Ice is built with an open architecture. This means other document management solutions, both decentralized and centralized, can be hooked into the core Ice protocol. This is done through the Ice Application Programming Interface (API), or by building a dApp that interacts with the Ice smart contracts. Guides and tutorials will be provided by the core Hydro dev team to fully leverage the power of Ice in other projects.
 
 ## Ice: Technical Details
 
@@ -170,11 +168,10 @@ A critical part of financial onboarding is account creation. This typically invo
 #### Implications for Land & Real Estate Rights
 
 As indicated in the preamble, the right to private property has been viewed as an inalienable right since the Renaissance. In many parts of the world, the system for protecting these rights lies in municipal and local governments, using antiquated and easily corruptible systems. The Ice protocol provides an immediate and very cost effective way to securely store, sign, and immutably guarantee land rights to property owners. Ice makes these documents borderless and tamper proof, and the blockchain is not regulated by any single government body. There are multiple dApps built on top of Snowflake that can tie these documents to identities, which can be individuals, businesses, groups of people, tribes, or any other entity.
-Ice dApp Store
 Any financial institution, financial intermediary, software provider, or service provider can build a dApp that gets offered in the Ice dApp store. This makes Ice extremely powerful as a means to interact with offline and private financial document protocol that are popular in industries such as mortgage, lending, and insurance.  
 
 ## Risks
-The central risk of the Ice protocol is the adoption of public blockchain infrastructure for document storage, signing, authentication, and validation. The Hydro team is reliant on nascent protocols such as IPFS, Storj, Sia, and MaidSafe to create viable decentralized cloud storage capabilities that can be linked to the on-chain Ice events. It is also unknown the cost of decentralized data storage, as the Ethereum network scales.
+The central risk of the Ice protocol is the adoption of public blockchain infrastructure for document storage, signing, authentication, and validation. The Hydro team is reliant on nascent protocols such as IPFS, Storj, Sia, and MaidSafe to create viable decentralized cloud storage capabilities that can be linked to the on-chain Ice events. The cost of decentralized data storage as the Ethereum network scales is also unknown.
 
 There have been private blockchain initiatives proposed by startups, governments, and infrastructure providers that threaten the core message of Ice. To combat the risk of low adoption and competition, it is imperative for the following things to happen:
 
