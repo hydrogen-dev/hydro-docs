@@ -86,7 +86,9 @@ Document tampering is another pitfall for financial documents. Seals have been u
 #### Flaws with E-Signature Providers
 
 Because e-signatures typically consist of a typed or cursive font version of a signature, anyone with access to an internet can sign documents electronically on behalf of the intended signer. This includes relatives, business associates, secretaries, and even hackers. Even if a signer intend to electronically sign a document, a simple mistake such as leaving an open email connection or open WiFi can lead to access to potentially important documents. Imagine if this means signing an important business deal before the terms have been duly accepted. Can this then be disputed in court? The answer depends on jurisdiction and interpretation of electronic laws. 
-E-Signatures Leading To Fraud
+
+#### E-Signatures Leading To Fraud
+
 Loans, mortgages, and other complex financial transactions typically come with very lengthy consents, agreements, and contracts, along with intermediaries that process the documents. Fraud and forgery is increasingly easier in these industries, due to the ease of adding a fake e-signature to any of od the documents.
 
 According to a Forbes investigation, some unethical car dealers have used e-contracts to charge more than the agreed-upon sales price, tack on hundreds or thousands of dollars in extra add-ons that consumers didn’t want or agree to buy, or overcharge for government fees and engage in other illegal practices – such as e-signing consumers’ names without showing buyers the contract.
