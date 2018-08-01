@@ -1,0 +1,9 @@
+# Welcome to the DA Program Materials Folder!
+This folder is intended to provide DAs and prospective DAs with the necessary documentation to help them understand what the program entails. Additionally, it is meant to serve as a mechanism for community members to actively engage with DAs and hold them accountable. Ultimately, DAs are growing the Hydro ecosystem for the well-being of its community members. 
+
+Community members are encouraged to consider this space as their own and to actively make pull requests to update documentation, the DA community overview, and the DA code of ethics. Further, community members are encouraged to comment on pull requests and engage in discourse that will help the community make decisions on any changes under consideration. 
+
+## Documentation
+[DA Community Overview:](https://github.com/hydrogen-dev/hydro-docs/blob/master/da-materials/da-community-overview.md) This document is intended to be a specific set of standards maintained by the community to give DAs direction on how to best serve the community within their role.
+
+[DA Training Materials:](https://github.com/hydrogen-dev/hydro-docs/blob/master/da-materials/da-training.md) This document serves as a starting resource for new DAs and prospective DAs to begin understanding the underlying product and business components of the Hydro ecoystem. Community members in general are strongly encouraged to familiarize themselves with these training materials, regardless of participation in the DA program. 
