@@ -1,0 +1,49 @@
+##About the DA Program
+Welcome to the Hydro Decentralized Ambassador (DA) program. The early members of the Hydro core team created the DA program to give more control to the community and lead to full decentralization of the project. The DA’s will be responsible for generating growth outside of the original core team and bringing in more developers, product managers, and other parties with the skills and motivation to grow the ecosystem.
+
+##Community Accountability
+The DA’s play a large role in growing the Hydro ecosystem worldwide. Accordingly, DAs are accountable to the well-being of the global Hydro community; This document will serve as a living document to all DA’s, and modifications will be made by the community as the program continues. DAs are expected to hold one another accountable per the standards established in this document.
+
+##About the HCDP
+The [HCDP program](https://github.com/hydrogen-dev/hcdp) is a program oriented toward fostering developers and developer growth in the community by empowering developers to complete projects that benefit the ecosystem. HCDP is a community-focused initiative to foster engagement and collaboration among developers in the Hydro ecosystem. Under the program, anyone in the ecosystem can define a developer-oriented task and a corresponding HYDRO grant amount. Anyone in the ecosystem can contribute work toward the task, and successful submissions receive HYDRO token grants for development. Example HCDP tasks include:
+
+* SDKs for Hydro protocols
+* dApps built on top of open-source Hydro technology
+* Bug discovery and code improvements
+* Integrations of third-party tools into the Hydro ecosystem
+* Security audits and code reviews on open-source Hydro technology
+
+Both success criteria and grant transfers are handled by the Hydro community. Decentralization Ambassadors are expected to work closely with developers participating in the HCDP, and actively contribute to its growth - to some extent with their own Hydro, and to some extent with Hydro available in existing token allocation structures.
+
+##About Hydro
+Hydro enables new and existing private systems to seamlessly integrate and leverage the immutable & transparent dynamics of a public blockchain to enhance application and document security, identity management, transactions and artificial intelligence. The global community of Hydro developers works to create smart contracts that enable this functionality, core protocols that facilitate on-chain integrations by private companies, and ancillary products and implementations of the protocols that empower end users to navigate within a global web3 financial framework.
+
+##About Hydrogen
+Hydrogen is the global financial platform of the Web 3.0. The platform includes core infrastructure APIs ("Atom"), public blockchain products and protocols ("Hydro"), an auto-machine learning library ("Ion"), and a design library (“Element”), all uniquely designed for developers & enterprises building financial applications in areas such as savings, investing, insurance, and wellness. Hydrogen is designed to be one company that implements the protocols established by Hydro. As the Hydro ecosystem grows, other such companies are expected to emerge, each with different objectives, products, and business models.
+
+###DAs and Hydrogen
+DAs are welcome to reference Hydrogen employees as points of guidance or for collaboration, but are expected to operate autonomously, making independent decisions that have an impact on the ecosystem per their own vision. They are encouraged to work collaboratively to contribute to growth where combined effort can prove valuable to the ecosystem, but are ultimately independent actors.
+
+##DA Code Of Ethics
+
+The code of ethics is an important standard by which the global Hydro community can gauge the extent to which a DA is contributing to the project.
+
+DAs shall be ethically bound by a shared vision toward a decentralized future in which users are empowered to navigate their financial lives independent of the control of centralized authorities. DAs should conduct themselves in a manner that contributes to the values of transparency, openness, individual autonomy, security, accessibility of financial services, anti-corruption, and the general betterment of the lives of those involved in the Hydro ecosystem. DAs recognize that blockchain technology creates a potential for a paradigm shift away from the historical necessity for reliance on centralized institutions to govern and own individuals’ data, stripping them of autonomy and reasonable choice over the control of important elements of their lives. While DAs may vary in their opinions on how best to create a world in which these values are inherent to the day-to-day lives of global citizens, particularly citizens who have been historically oppressed or neglected by centralized authorities, they should justify their decision-making with these values in mind. Further, DAs are expected to actively engage with the global Hydro community, and listen and consider their opinions when working to improve the ecosystem.
+
+With respect to developers, the overarching approach by which DAs are expected to grow the Hydro ecosystem is twofold. First, DAs are expected to conduct initiatives and dedicate their efforts toward attracting new developers to the Hydro ecosystem. This involves, but is not limited to: developer outreach, community engagement, creation of educational content, business development, incubation initiatives, and marketing initiatives. Second, DAs are expected to foster the growth of developers within the ecosystem, ensuring that they have sufficient direction and understanding of Hydro products to innovate and develop smart contracts, APIs, API integrations, protocol implementations, audits, and other code to improve the ecosystem and create valuable blockchain-enhanced products that facilitate user adoption and shepherding of the aforementioned values to the lives of users. To a large extent, nurturing developer involvement in the ecosystem should be conducted through the HCDP. DAs are expected to utilize the HCDP program as a tool to organize and streamline development efforts in the ecosystem. DAs should, to some extent, use their own Hydro as well as Hydro allocated by the community to the HCDP program to encourage participation in HCDP initiatives by talented developers. DAs should also supervise that tasks in the program are being managed in an ethical way, and completed proficiently.
+
+While a general approach toward growing the ecosystem comes from interaction with developers, DAs are expected to further attract and nurture individuals with a wide range of skill sets to complement those of developers. DAs should aim to involve product managers, business development professionals, sales professionals, marketing managers, project managers, business executives, technical writers, artists, and any other individuals who can contribute to the expansion and adoption of products created within the Hydro ecosystem.
+
+As DAs are empowered to grow the DA program, DAs are expected to take great care and consideration when selecting new DAs. They should keep an open mind to individuals with opinions, backgrounds, and skill sets that differ from their own and generally consider candidates’ values, skill sets, vision, and ability to transform that vision into tangible results that improve the Hydro ecosystem. DAs shall be held responsible for conducting new DA selection in a transparent, efficient, and effective manner that echoes the ethical standards of the DA program.
+
+As DAs operate under a decentralized, autonomous governance structure dictated by a smart contract, DAs are expected to behave responsibly within that governance structure. Before being bound by the rules enforced in the smart contract, DAs are first bound by their ethical responsibility to behave in a manner that benefits the Hydro community. They are expected to take leadership and initiative, and be transparent in the work they do by providing regular updates to other DAs and the broader community. DAs who deem themselves unable to sufficiently meet their obligations and dedicate reasonable effort toward the program are expected to opt out of the program. If DAs or a large majority of community members believe strongly that certain DAs are not fulfilling the duties or meeting the ethical standards that govern responsible DA conduct, DAs are expected impeach the offending party, and when necessary, to leverage voting structures included in the Smart Contract to remove the offending DA from the program. Further, as new DAs are included in the program, existing DAs are expected to train them and onboard them to empower them to best contribute to the program.
+
+As the ecosystem grows, DAs will not be the only parties with a vested interest in its development. DAs are encouraged to seek guidance when needed from other members of the Hydro ecosystem, including early developers contributing toward the growth of the project. Nonetheless, DAs are not inherently bound by the judgement of individuals external to the program; rather, they are ambassadors aiming to expand Project Hydro into a decentralized, autonomous ecosystem that adds value to global entities.
+
+##Voting
+Every month, DA’s will participate in a consensus vote defined by parameters within the smart contract. Through the smart-contract voting structure, DAs will be able to
+Appoint new DAs,
+If necessary, remove other DAs
+If necessary, remove themselves from the DA program
+
+Through the smart contract, DAs will also receive an allocation of 222,222 HYDRO tokens per month throughout the 24 month duration of the program. The DA smart contract is currently under development and will be shared in this document when complete.
