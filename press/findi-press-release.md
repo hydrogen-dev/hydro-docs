@@ -9,7 +9,7 @@ FINDI is a collaborative working group whose purpose is to help usher in the Web
 
   
 
-“Financial institutions want to implement public blockchain technology, but have been scared by an aggressive campaign from private blockchain consortiums, causing $500 million in spending on blockchain solutions already in 2018. FINDI is vital because financial services institutions are fast approaching the point of no return. Billions around the globe risk losing access to the blockchain revolution,” says Hydrogen’s Co-Founder, and FINDI Founding Member Mike Kane.
+“Financial institutions want to implement public blockchain technology, but have been scared by an aggressive campaign from private blockchain consortiums like R3, causing $500 million in blockchain spending already in 2018. FINDI is vital because financial services institutions are fast approaching the point of no return. Billions around the globe risk losing access to the blockchain revolution,” says Hydrogen’s Co-Founder, and FINDI Founding Member Mike Kane.
 
   
 
