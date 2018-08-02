@@ -25,7 +25,7 @@ FINDI is a collaborative working group whose purpose is to help usher in the Web
 
 “Centralized financial security is obsolete, as we have seen with recent hacks of Equifax, BMO, Coinrail, Bancor, and Bithumb. There are still 2 billion unbanked globally. Together, the members of FINDI can change the financial paradigm by leveraging public blockchains,” Kane concludes.
 
-  
+  For more information and a list of FINDI members, vist our [site](http://www.joinfindi.org/).
   
 
 ### Founding Member
