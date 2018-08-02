@@ -1,7 +1,7 @@
 ## Hydrogen Launches FINDI To Decentralize Financial Services
 Fast-growing blockchain firm founds non-partisan consortium, attracting Fortune 500 companies, leading consultants, crypto projects, and academics at launch.
 
-**New York, NY** (August 3, 2018) [Hydrogen](https://www.hydrogenplatform.com), recently named “[FinTech Startup of the Year](https://home.kpmg.com/lu/en/home/media/press-releases/2018/06/fintech-awards-luxembourg.html),” founds the Financial Industry Decentralization Initiative (FINDI), a non-partisan consortium to facilitate a more open, transparent, and decentralized global financial system powered by public blockchains.
+**New York, NY** (August 3, 2018): [Hydrogen](https://www.hydrogenplatform.com), recently named “[FinTech Startup of the Year](https://home.kpmg.com/lu/en/home/media/press-releases/2018/06/fintech-awards-luxembourg.html),” founds the Financial Industry Decentralization Initiative (FINDI), a non-partisan consortium to facilitate a more open, transparent, and decentralized global financial system powered by public blockchains.
 
   
 
@@ -9,7 +9,7 @@ FINDI is a collaborative working group whose purpose is to help usher in the Web
 
   
 
-“Financial institutions want to implement public blockchain technology, but have been scared by an aggressive multi-billion dollar campaign from private blockchain consortiums, causing $500 million in spending on private blockchain solutions already in 2018. FINDI is vital because financial services are fast approaching the point of no return. Billions around the globe risk losing access to the blockchain revolution,” says Hydrogen’s Co-Founder Mike Kane.
+“Financial institutions want to implement public blockchain technology, but have been scared by an aggressive multi-billion dollar campaign from private blockchain consortiums, causing $500 million in spending on blockchain solutions already in 2018. FINDI is vital because financial services institutions are fast approaching the point of no return. Billions around the globe risk losing access to the blockchain revolution,” says Hydrogen’s Co-Founder, and FINDI Founding Member Mike Kane.
 
   
 
@@ -18,7 +18,9 @@ FINDI is a collaborative working group whose purpose is to help usher in the Web
 -   Free to join, no membership dues
 -   Joint research and product development, symposiums, industry consulting
 -   Chain- and protocol-agnostic, with a mission to support public blockchains
--   Members and companies representing over $1 trillion in assets joined before launch
+-   Financial executives, startups, consultants, academics, and governments invited to participate 
+-   Members overseeing over $1 trillion in assets and tens of millions of customers joined before launch
+
     
 
   
@@ -33,7 +35,7 @@ FINDI is a collaborative working group whose purpose is to help usher in the Web
 
 ### Select Initial Associate Members
 
--   **Natixis Investment Managers, George Marootian, Head of Technology**: The corporate & investment banking, asset management, insurance and financial services arm of Groupe BPCE, serving a total of 36 million customers. Natixis manages $1 Trillion in assets
+-   **Natixis Investment Managers, George Marootian, Head of Technology**: The corporate & investment banking, asset management, insurance and financial services arm of Groupe BPCE, serving a total of 36 million customers. Natixis manages $1 Trillion in assets.
     
 -   **Principal Financial Group, Juan Manuel Vega, Chief Digital Officer - Chile**: The largest APV manager in Chile managing $40 Billion in assets
     
