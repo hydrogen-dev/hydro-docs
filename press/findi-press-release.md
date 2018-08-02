@@ -37,9 +37,9 @@ FINDI is a collaborative working group whose purpose is to help usher in the Web
 
 -   **Natixis Investment Managers, George Marootian, Head of Technology**: The corporate & investment banking, asset management, insurance and financial services arm of Groupe BPCE, serving a total of 36 million customers. Natixis manages $1 Trillion in assets.
     
--   **Principal Financial Group, Juan Manuel Vega, Chief Digital Officer - Chile**: The largest APV manager in Chile managing $40 Billion in assets
+-   **Principal Financial Group, Juan Manuel Vega, Chief Digital Officer - Chile**: The largest APV manager in Chile, managing $40 Billion in assets
     
--   **Marsh, Liviu Huluta, Head of Consumer & Commercial Central, Southern, Eastern Europe**: A global leader in insurance broking and risk management with annual revenue exceeding $13 billion
+-   **Marsh, Liviu Huluta, Head of Consumer & Commercial Central, Southern, Eastern Europe**: A global leader in insurance broking and risk management, with annual revenue exceeding $13 billion
 
 -   **Synpulse, Mathias Hausherr, Managing Director**: An internationally established management consulting company and valued partner of many of the world’s largest financial services providers
     
