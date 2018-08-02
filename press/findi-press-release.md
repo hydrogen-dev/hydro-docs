@@ -30,7 +30,7 @@ FINDI is a collaborative working group whose purpose is to help usher in the Web
 ### Founding Member
 
 
-**Hydrogen**: The global financial platform of the Web 3.0. The platform includes APIs, protocols, libraries, apps, and dApps for financial developers and enterprises. Hydrogen's blockchain division, Hydro (token symbol: HYDRO), enables private financial systems to seamlessly leverage the public blockchain, enhancing functionality across key areas including authentication, identity verification, document management, payments processing, and machine learning. Hydrogen is based in the Flatiron district of New York City, and is profitable in its first year of business.
+**Hydrogen, Mike Kane, Co-Founder**: The global financial platform of the Web 3.0. The platform includes APIs, protocols, libraries, apps, and dApps for financial developers and enterprises. Hydrogen's blockchain division, Hydro (token symbol: HYDRO), enables private financial systems to seamlessly leverage the public blockchain, enhancing functionality across key areas including authentication, identity verification, document management, payments processing, and machine learning. Hydrogen is based in the Flatiron district of New York City, and is profitable in its first year of business.
 
 
 ### Select Initial Associate Members
