@@ -271,7 +271,7 @@ The full authentication workflow is described below, and can be generally broken
 2. Authentication Attempt
 3. Validation
 
-Initialization includes User setup and a subsequent connection between User and Application. To get set up for Client-Side Raindrop, a User first needs to generate a seed from which a Hydro wallet can be created. This seed generation process takes place within the Hydro Mobile App using entropy (i.e. random data) supplied by the User. Along with a wallet seed, a randomly generated alphanumeric Hydro ID is also generated for the User. This Hydro ID is a unique identifier for the User within the Hydro ecosystem.
+Initialization includes User setup and a subsequent connection between User and Application. To get set up for Client-Side Raindrop, a User first needs to generate a seed from which a Hydro wallet can be created. This seed generation process takes place within the Hydro Mobile App using entropy (i.e. random data) supplied by the User in conjunction with entropy supplied by a cryptographically secure random number generator. Along with a wallet seed, a randomly generated alphanumeric Hydro ID is also generated for the User. This Hydro ID is a public unique identifier for the User within the Hydro ecosystem.
 
 These details are routed through the Hydro API and stored on-chain in a Hydro smart contract, and the unique Hydro ID is displayed to the User. The User is then able to provide the Hydro ID to the Application, which the Application in turn uses to register a link between itself and the corresponding User via the Hydro API. Finally, the Hydro API communicates any resulting link to the Hydro Mobile App and the authentication process is ready to begin.
 
