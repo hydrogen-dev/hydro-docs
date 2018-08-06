@@ -1,7 +1,7 @@
 ## Hydrogen Launches FINDI To Decentralize Financial Services
 Fast-growing blockchain firm founds non-partisan consortium, attracting Fortune 500 companies, leading consultants, crypto projects, and academics at launch.
 
-**New York, NY** (August 3, 2018): [Hydrogen](https://www.hydrogenplatform.com), recently named “[FinTech Startup of the Year](https://home.kpmg.com/lu/en/home/media/press-releases/2018/06/fintech-awards-luxembourg.html),” founds the Financial Industry Decentralization Initiative (FINDI), a non-partisan consortium to facilitate a more open, transparent, and decentralized global financial system powered by public blockchains.
+**New York, NY** (August 6, 2018): [Hydrogen](https://www.hydrogenplatform.com), recently named “[FinTech Startup of the Year](https://home.kpmg.com/lu/en/home/media/press-releases/2018/06/fintech-awards-luxembourg.html),” founds the Financial Industry Decentralization Initiative (FINDI), a non-partisan consortium to facilitate a more open, transparent, and decentralized global financial system powered by public blockchains.
 
   
 
