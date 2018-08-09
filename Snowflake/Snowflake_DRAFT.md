@@ -103,7 +103,7 @@ Identities currently take two common forms - private and public.
 
 Increasingly, research has shown that private forms of identities have begun to tell us more about ourselves, and produce more emotional attachment than public forms. Many have argued that a cell phone number has now replaced a Social Security Number in the United States in importance. According to Statista, global cell phone users are expected to reach 5 Billion in 2019, with over 50% using smartphones.
 
-An example of the longevity and utility of cell phone numbers can be found in the U.S. mobile to mobile porting stats. In 2003, the first year data was collected, only 795,000 numbers were in the U.S. mobile porting database, by 2009 that number ballooned to over 40 Million [we would now estimate the number to be in the hundreds of millions but no public data exists. There are now governmental initiatives to make the practice commonplace because lawmakers view phone numbers as “important identifiers” and have said “consumers overwhelmingly prefer to keep their numbers. Psychological studies have shown high levels of distress and anxiety when people are without their cell phones, and they now possess similar attachment qualities as teddy bears for youth.
+An example of the longevity and utility of cell phone numbers can be found in the U.S. mobile to mobile porting stats. In 2003, the first year data was collected, only 795,000 numbers were in the U.S. mobile porting database, by 2009 that number ballooned to over 40 Million we would now estimate the number to be in the hundreds of millions but no public data exists. There are now governmental initiatives to make the practice commonplace because lawmakers view phone numbers as “important identifiers” and have said “consumers overwhelmingly prefer to keep their numbers. Psychological studies have shown high levels of distress and anxiety when people are without their cell phones, and they now possess similar attachment qualities as teddy bears for youth.
 
 The idea of what is your identity is changing, with technology more and more intertwined into one’s sense of self. When creating an identity protocol, it is therefore important to not only include public identity, but also private identity in the equation.
 
@@ -123,113 +123,93 @@ Governments may falsely see blockchain “the technology” as a panacea, ignori
 ## Introducing Snowflake
 To solve the problems mentioned thus far, the team introduces the Hydro Snowflake - unique identity powered by the public blockchain. Why call it Snowflake? Snowflakes are one of the most beautiful, random, and individualistic phenomenons in nature. Not only do scientists believe they come in 35 different types, there are differences in the atomic structure of the atoms making up the water molecules, making each Snowflake unique.
 
-Snowflake identities must be “minted.” Each minted Snowflake consists of both immutable and mutable data, and acts as a base identity layer that can be interacted with and extended.
+Snowflake identities must be “minted.” Each minted Snowflake acts as a base identity layer that can be interacted with and extended.
 
 ### A Tokenized Identity
 Every application, be it web or mobile, consumes some form of identity information.  As a result, users are stuck either repeatedly providing the same data to multiple applications, or relying on central parties to relay said information. If those central parties mishandle user data, users are inevitably vulnerable to identity theft. Further, apps must deal with verifying that the provided user information is valid in order to build meaningful user profiles.
 
-To address these shortcomings, each Snowflake user has a non-fungible token that is mapped to a unique HydroID and associated with the seed created through Hydro Client-Side Raindrop on a mobile device.
+To address these shortcomings, each Snowflake user has a non-fungible token that is mapped to a unique HydroID and associated with the seed created through [Hydro Client-Side Raindrop](https://github.com/hydrogen-dev/hydro-docs/tree/master/Raindrop) on a mobile device.
 
-This non-fungible token supports storage of three types of data:
-- Immutable Data
-- Mutable Data
-- Metadata
-  - Validations
-  - Resolvers
+This non-fungible token supports storage of any arbitrary form of data, stored in external smart contracts called "Resolvers." We call contracts structured to encode data that can be associated with a Snowflake a Resolver as a nod to the analogous concept in services such as DNS and ENS, where external reference points are able to eliminate abstraction by encoding arbitrary data structures that point to, or "resolve to" an atomic entity - in this case, the Snowflake. The architecture of storing information in external contracts that tie back to a singular Snowflake enables unlimited scope for how a user defines their identity, rather than restricting an identity to a pre-defined set of standards. An intuitive comparison would be a device that is able to encode passports, driver's licences, social media accounts, medical records, and other identity-defining data all in a singular source that can be queried in a standard way by any system. In this way, any dApp with which a user interacts can easily become a resolver, maintaining its core functionality while streamlining the mechanisms by which a user can interact with it. 
 
-Each piece of data associated with a user’s Snowflake can be considered an “attribute” of that Snowflake identity. When minting or updating a Snowflake, users hash their data with a salt. In cryptography, a salt is random data that is used as an additional input to a one-way function that "hashes" data, a password, or passphrase. The result of this hash is stored on-chain. To the casual observer or would-be attacker, the data is meaningless. However, when a user elects to share plain-text data and salt with a third party, its authenticity is verifiable.
+Because Snowflake only acts as a singular point for a user to manage their data and places no restrictions on the encoding of the data itself, it offers complete flexibility for the implementation of keeping the data public or privatizing it. 
+
+### Multiple Address Ownership
+Native to the Snowflake protocol is the capability for users to irrefutably claim multiple Ethereum addresses through cryptographic signatures. In the absence of Snowflake, when users want to interact with dApps on Ethereum, they must either transfer their private key to a wallet on the new device or create a new, entirely unassociated address. Fundamentally, any transfer of a private key away from a local device exposes a user's Ethereum, tokens, and data tied to that address to phishing and malware. Even careful users are likely to fall victim to systems that structurally require the transfer of private keys across devices. Alternatively, creating new, unassociated keypairs doesn't offer much value to users, as all of their data is tied to an address on a separate device. Snowflake allows users to provably tie multiple addresses back to their core Snowflake, extending any Resolver data across their devices without requiring any transfer of private keys. Procedurally, when linking a new address to their Snowflake, the owner address initiates a sealed claim `hash(addressToClaim, secret, hydroID)`. Subsequently, the address to be claimed sends a transaction with the `secret` and `hydroID`. The initial claim is hashed in order to prevent a malicious observer from recognizing which address an owner is trying to claim prior to the completion of the claim. The `secret` parameter is necessary to prevent a [Rainbow Table Attack](https://www.techopedia.com/definition/30617/rainbow-table-attack-cryptography) on the hashed value. 
 
 ### Identity Verification
-Validators are third parties who can vouch for the validity of data tied to a Snowflake identity. In the absence of validators, on-chain data hashes would be meaningless since the hash cannot be reversed.
+The concept of identity is relatively meaningless without validation. In general, validators are third parties who can vouch for the validity of data tied to an identity. Since Snowflake empowers users to self-associate with on-chain identity information, it seems apparent that Snowflake only enables for self-attested data, which is relatively limited in scope. However, because the nature of a user's self-attested data is arbitrary, Snowflake allows for norms to drive data attestation in fundamentally decentralized fashion. The logic goes as follows: Because entities observing a user's self-attested data will not derive value from this data without third-party attestations, users will find value in connecting with data structures that enable third-party attestation. Users are able to choose which third-party attestations to pursue, which is closely tied to the ability for entities to choose which third-party attestations they accept. In this way, Snowflake enables a free-flowing ecosystem of third-party attestations under any set of standards adopted by corresponding parties, rather than a pre-defined attestation structure native to the identity protocol. 
 
-Off-chain validators can act as parties trusted by individual actors in the decentralized ecosystem. Once the validation happens off-chain, an on-chain record is tied to a user’s Snowflake. Because nobody can impersonate a validator without access to their private keys, business entities can incorporate on-chain validations into any relevant business logic by querying the blockchain. If a user changes any of the data, it loses its prior validations along with any corresponding significance.
+In practice, validation structures will likely develop whereby off-chain validators can act as parties trusted by individual actors in the decentralized ecosystem. Once the validation happens off-chain, an on-chain merkle hash would be tied to a user’s Snowflake. Because nobody can impersonate a validator without access to their private keys, business entities can incorporate on-chain validations into any relevant business logic by querying a user's Snowflake. If a user changes any of the data, it would lose its prior validations along with any corresponding significance due to the deviance from the on-chain record. Various implementations of similar validation structures can develop, each catered to their particular use-cases (KYC, reputation, identity implementations, etc) while all resolving to a user's Snowflake.
 
-For instance, a user could have a third party validate data by passing the plaintext of the data and the appropriate salt. The third party could then hash the data and compare to what is stored on-chain. If it matches, it would merit a validation.
+### The Role of Snowflake Metadata Within an Ecosystem of Businesses and dApps
+While immutable and standard data native to an identity built on top of the Snowflake protocol help a user establish a secure and global standard for core identity information, Snowflake itself allows users to tie an unlimited range of metadata to their identities by setting third-party dApps as resolvers. As users’ interactions with dApps helps build their on-chain identity, they may set a dApp as a resolver for their Snowflakes, allowing businesses querying the associated metadata to incorporate it into the logic of their own applications.
 
-Validation may be conducted off-chain; for instance, date of birth validation can be verified by a government agency in-person. This validation might carry meaning when proving that you are above a certain age to buy a movie ticket, or when opening a new account at a bank. Alternatively, if a user acquires validations for an email address, they would be able to provide this email to applications without requiring an email confirmation process, without ever having to publicly reveal the email address.
+Fundamentally, a third-party or dApp acts as a certain attribute on a user’s Snowflake. An application prescribes meaning to a user based on associated data with their snowflake. Let us more closely examine these meanings in the context of a few examples.
 
-### Snowflake Metadata
-While immutable and standard data help a user establish a secure and global standard for core identity information, the most powerful aspect of Snowflake is that it allows users to tie an unlimited range of metadata to their identities by setting third-party dApps as resolvers. As users’ interactions with dApps helps build their on-chain identity, they may set a dApp as a resolver for their Snowflakes, allowing businesses querying the associated metadata to incorporate it into the logic of their own applications.
+What does a Resolver mean from the perspective of the user? Resolvers establish a user’s core data. Acquiring validations from reputable sources enhances the integrity of a user’s Resolver data which can be relied on by businesses, governments, or decentralized applications querying any relevant identity information.
 
-Fundamentally, a third-party or dApp validates a certain attribute on a user’s Snowflake. An application prescribes meaning to a user based on validations for attributes of their snowflake. Let us more closely examine these meanings in the context of a few examples.
+What does a Resolver mean from the perspective of an app? Since resolvers encode data about a user, a business can programmatically incorporate this data to drive business logic on its platform to improve user experience on its platform or offer users certain permissions. Requirements for third-party validations of this data could be encoded as part of the business logic. If an app were to recognize Snowflake as an identity protocol, it could prescribe whatever meaning to Resolver data best suits its needs.
 
-What does validation mean from the perspective of the user? Validations add meaning to a user’s core data. Acquiring validations from reputable sources enhances the integrity of a user’s Snowflake which can be relied on by applications querying any relevant identity information.
+- Example 1, KYC validation: a government could (off-chain) allow users to register their Snowflakes for a voting validation. The user could then cast their vote through a third-party voting dApp, which would only tally votes from registered Snowflakes. This process would ensure that each person can only vote once, eliminating voter fraud or Sybil attacks, while providing complete transparency and much greater efficiency to elections. This can apply to any arbitrary set of digital voting structures and does not enforce a specific implementation. 
+- Example 2, Social Media: to prevent the creation of fake accounts, an app could implement a system that links a user’s Snowflake to an account on the app. Any accounts that have their name validated by at least X existing users of the app could display a ‘verified’ checkmark on the UI of the app. Unlike the first example, this example factors validations from individuals instead of from large institutions. Also, this example observes validation for the HydroID associated with the Snowflake itself rather than a resolver. The openness of the Snowflake identity framework allows for a wide range of use-cases.
 
-What does validation mean from the perspective of an app? Validation derives its meaning from off-chain recognition. If an app were to recognize Snowflake as an identity protocol, it could prescribe whatever meaning to validations that suits its needs.
-
-- Example 1, KYC validation: a government could (off-chain) allow users to register their Snowflakes for a voting validation. The user could then cast their vote through a third-party dApp such as Horizon State, which would only tally votes from registered Snowflakes. This process would ensure that each person can only vote once, eliminating voter fraud, while providing complete transparency and much greater efficiency to elections.
-- Example 2, Social Media: to prevent the creation of fake accounts, an app could implement a system that links a user’s Snowflake to an account on the app. Any accounts that have their name validated by at least X existing users of the app could display a ‘verified’ checkmark on the UI of the app. Unlike the first example, this example factors validations from individuals instead of from large institutions. Also, this example observes validation for a standard attribute rather than a resolver. The openness of the Snowflake identity framework allows for a wide range of use cases.
-
-What does validation mean from the perspective of the validator? There are many reasons validators may want to attest to various attributes of a Snowflake.
-
-- Example 1, Social Media Attestation: A person might be participating in a social media app (e.g. LinkedIn) and want to attest to a friend's skills or experience.
-- Example 2, State Driver’s License: A state or local government may want to validate the driving ability of a person, in the general interest of public safety. Testing and payment for the license can be done off-chain, but everyone who observes this user’s Snowflake would know that the government has performed its due diligence.
+What does being a Resolver mean from the perspective of the Resolver? Resolvers are able to leverage the native functionality of users' Snowflakes. This offers two key points of value:
+- Rather than existing as an independent dApp with which the user interacts, they exist as dApps within the ecosystem of Resolvers associated with a given Snowflake. This means a user can seamlessly manage their associated data from a dashboard, and they are not burdened with the struggle of aggregating data from multiple ethereum addresses and various dApps whenever they want to leverage it. 
+- Resolvers are able to easily leverage token transfer functionality native to users' Snowflakes. This streamlines the development process for dApps aiming to monetize via functionality such as monthly subscriptions. Users are able to manage Hydro withdrawal balances for all of their resolvers from a single dashboard. 
 
 ### HYDRO Tokens In Snowflake
-Validators must stake in HYDRO tokens to participate in the ecosystem. Tokens are deposited in an on-chain contract tied to a validator's unique address, like a security deposit would be tied to a leaseholder of commercial real estate. Tokens that are removed (or transferred to a third party) from this contract revoke access of the validator to the ecosystem. At scale, avoiding malicious behavior will be necessary for all validators globally. If they act maliciously, then any ecosystem for off-chain payments for validations would no longer exist.
 
-This framework ensures that individuals and organizations serving as validators have an interest in validating with integrity and consistency. An application querying these validations may define any nature or level of validation they need for a given Snowflake to be deemed satisfactory; for instance, an application may only grant a user access to certain features if that user's Snowflake has been vouched for by certain whitelisted or known validators.
+//An application querying these validations may define any nature or level of validation they need for a given Snowflake to be deemed satisfactory; for instance, an application may only grant a user access to certain features if that user's Snowflake has been vouched for by certain whitelisted or known validators.
 
-The HYDRO token is not only intended to be a gateway into the ecosystem of dApps that can be built on top of Snowflake, but also a centerpiece for convenient programmatic transfers for all resolvers. Through Snowflake, users can set specific allowances for resolvers to withdraw HYDRO. The user sets the limits on allowed withdrawals on a per-resolver basis, streamlining replication of user-facing models that are currently managed through third-party financial institutions. Snowflake's flexibility with programmatic token transfers allows businesses to encode an arbitrary set of criteria into their business logic for recurrent processes, such as verifying membership within a particular group in order to offer discounted subscriptions for a product.
+Through Resolvers, Snowflake acts as a bridge for businesses to use that connects an individual to the individual’s on-chain data. It acts as a single point of contact to streamline business logic. The larger the existing network of dApps that encode user data is, the larger the incentive for a new dApp to join that network. Accordingly, we included a function to charge new dApps a fee in HYDRO who want to join the ecosystem and connect their user data to their users’ Snowflakes. 
 
-As we will discuss later on, apps, dApps, products, or platforms built on top of Snowflake can also incorporate HYDRO tokens into their processes. For example, certain kinds of validations or actions may require on-chain HYDRO token transactions, where users would be required to maintain or transfer HYDRO balances.
+The HYDRO token is not only intended to be a gateway into the ecosystem of Resolvers built on top of Snowflake, but also a centerpiece for convenient programmatic token transfers between users and resolvers. Through Snowflake, users can set specific allowances for resolvers to withdraw HYDRO. The user sets the limits on allowed withdrawals on a per-resolver basis, streamlining replication of user-facing models that are currently managed through third-party financial institutions. Snowflake's flexibility with programmatic token transfers allows businesses to encode an arbitrary set of criteria into their business logic for recurrent processes, such as verifying membership within a particular group in order to offer discounted subscriptions for a product.
+
+As we will discuss later on, apps, dApps, products, or platforms built on top of Snowflake can also incorporate HYDRO tokens into their processes. For example, certain kinds of validations or actions may require on-chain HYDRO token transactions, where users would be required to maintain or transfer HYDRO balances, such as an implementation of our [Server-side Raindrop Authentication Protocol](https://github.com/hydrogen-dev/hydro-docs/tree/master/Raindrop).
 
 ### Open Framework
-It is important to note that the proposed framework is an open protocol for identity management. Unlike other blockchain products, there will be no centralized decision on the strength or authenticity of attestations or validations, or those who provide them. It will be up to the global community to identify and punish bad actors. Later in this paper, we examine potential apps, dApps, and platforms that can be built on top of or integrated into Snowflake to increase the effectiveness of the ecosystem.
+It is important to note that the proposed framework is an open protocol for identity management. Unlike other blockchain products, there will be no centralized decision on the strength or authenticity of data associations, attestations validations, or those who provide them. It will be up to the global community to identify and punish bad actors. Later in this paper, we examine potential apps, dApps, and platforms that can be built on top of or integrated into Snowflake to increase the effectiveness of the ecosystem.
 
 
 ## Snowflake: Technical Details
 
-There are four entities involved in the Snowflake: users, validators, resolvers, and business entities.
+There are four main entities generally important to Snowflake implementations: users, validators, resolvers, and business entities.
 
 ### Users
-Users mint their Snowflakes to represent their identities. They attach data to their Snowflakes and set resolvers in order to tie any form of metadata to their base Snowflake identities. Users can also maintain balances of HYDRO within Snowflakes, creating an easy and intuitive mechanism by which any dApp can interact with a user’s Snowflake. User data is either standard immutable data such name and date of birth, that can only be stored by the owner or approved validator, or non-standard mutable data such phone numbers and addresses that can be stored as a string or integer by the owner or by any address approved by the owner.
+Users mint their Snowflakes to represent their identities. They attach data to their Snowflakes and set resolvers in order to tie any form of metadata to their base Snowflake identities. Users can also maintain balances of HYDRO within Snowflakes, creating an easy and intuitive mechanism by which any dApp can interact with a user’s Snowflake. User data can take any arbitrary format and is associated with Smart Contracts called Resolvers on the Ethereum blockchain. 
 
 ### Resolvers
-While validators attach validations to a Snowflake, resolvers are set by users themselves. Resolvers are dApps that contain metadata about a user. An intuitive example is CryptoKitties - setting CryptoKitties as a resolver can tie the ownership of certain kitties back to the user's Snowflake identity. If that setting were to be validated by reputable validators, it would enable them to prove ownership of a certain address that owns CryptoKitties without needing to expose or transact with that address.
+While validators attach validations to a Snowflake, resolvers are set by users themselves. Resolvers are dApps that contain metadata about a user. An intuitive example is CryptoKitties - setting CryptoKitties as a resolver can tie the ownership of certain kitties back to the user's Snowflake identity, even if the Kitties are owned by various Ethereum addresses. If that setting were to be validated by reputable validators through another resolver, it would enable them to prove ownership of a certain address that owns CryptoKitties without needing to expose or transact with that address.
 
 ### Validators
 While validators are not included in the core Snowflake protocol, they add significant value when introduced at the dApp level. Resolvers built on Snowflake can encode any range of validation criteria. The simplest level would be a validation dApp in which a trusted KYC provider affirms whether a Snowflake is owned by a real person or not. Any Snowflake owner could complete KYC through the trusted party, set the validation dApp as a Resolver for their Snowflake, and prove that they exist to anybody else who also trusts the KYC party without ever meeting them. In practice, dApps can build nonbinary validation structures with a much more far-reaching range of implications in a variety of industries, with meaning derived from off-chain reputation, or their own native on-chain reputation protocols.  
 
 ### Business Entities
-Business entities are any applications or dApps that build logic into their applications that relies on information tied to a Snowflake. For instance, if a user has tied credit-related information to a Snowflake through one or several third-party dApps, a business entity might use that metadata in order to determine whether the user would be approved for a loan.
+Business entities are any applications or dApps that build logic into their applications that relies on information tied to a Snowflake. For instance, if a user has tied credit-related information to a Snowflake through one or several third-party dApps, a business entity might use that associated data in order to determine whether the user would be approved for a loan by calling a function on the user's Snowflake. These functions can be called programmatically through APIs, enabling business entities to leverage a user's on-chain associated data without needing to hire blockchain engineers or maintain complicated infrastructure for interacting with Ethereum contracts.  
 
 ### Snowflake Smart Contracts
-The core snowflake contract stores data, resolvers, and HYDRO balances. It allows users to mint tokens, set fields, and deposit HYDRO. When immutable fields such as name and date of birth are changed, users must mint a new token. When other fields are changed, their resolvers are reset. Resolvers allow users to link Snowflakes to external smart contracts which house more data, such as non-binary validations or accredited investor status. Users, resolvers, or any interested party is able to deposit HYDRO tokens to the Snowflake smart contract. This will facilitate staking requirements, payments, and other token functionality that will be integrated seamlessly into the Hydro ecosystem as it develops.
-
-3rd party dApps:
-- Hydrogen will create the initial core Snowflake data validation dApp which is a “gateway” to compliant third-party dApps (we will have guidelines about how these apps should look)
-- Hydrogen will create logic for dApps to allow sending, staking, and fees in Hydro
-- All dApps would want users to set their contract address as a resolver
+The core snowflake contract stores resolvers, and HYDRO balances corresponding with users' Snowflake Identity Tokens. It allows users to mint tokens, deposit HYDRO, set resolvers, and prove ownership of multiple Ethereum addresses. Users are able to add and remove data associated with their Snowflakes, allowing for flexibility when dealing with legal name changes or other complexities associated with identity management. Users, resolvers, or any interested party are able to deposit HYDRO tokens to the Snowflake smart contract. This facilitates payments, and other token functionality that will be integrated seamlessly into the Hydro ecosystem as it develops.
 
 The Base snowflake identity consists of the summation of:
-- Standard fields that are immutable on-chain and can be minted once by the owner
-  - Full Name
-  - Date of Birth
-- Standard fields, can be added and voided by the owner
-  - Name prefix/suffix
-  - Emails
-  - Phone numbers
-  - Addresses
-- Resolvers - can be added by token owners or if given allowance by the contract owner
-  - Ethereum smart contract addresses
-- Validation - any address with a HydroID can validate any attribute for any snowflake as long as they pay the gas costs.
+- Multiple Ethereum addresses claimed by the user
+- Resolvers - set by Snowflake owners through their Resolver dashboard
 
 A user’s Snowflake acts as an anchor point for data from all that user’s dApp interactions. A third-party app can see who validated which fields for the user. For example, in the image below, resolver 1 may be a social review dApp to show that the user has been validated as a good roommate. A business entity can see that validator f, a former roommate, validated the owner's info. It can therefore, in its business logic, allow reviewers from resolver 1 to write a review on the UI of its platform because their reviews apply to this snowflake owner.
 
 ![User Validation](./_assets/workflow1.png)
 
 ### Snowflake API and Hydro Mobile App
-Hydrogen’s Hydro API will facilitate user and business entity interactions with Snowflake smart contracts. The API provides end users the ability to register their HydroIDs, a prerequisite to minting their Snowflakes, through the Raindrop API integration into the Hydro mobile app. In the next iteration, users will be able to mint their own Snowflake associated with their HydroID through the Hydro mobile app while the Hydro API handles the direct interaction with the blockchain. The UI on their mobile app will allow them to observe validations they have obtained from addresses whitelisted by the Hydro API. They will also be able to set resolvers through their Hydro mobile app to attach a broader range of metadata to their snowflake.
+Hydrogen’s Hydro API will facilitate user and business entity interactions with Snowflake smart contracts. The API provides end users the ability to register their HydroIDs, a prerequisite to minting their Snowflakes, through the Raindrop API integration into the Hydro mobile app. In the next iteration, users will be able to mint their own Snowflake associated with their HydroID through the Hydro mobile app while the Hydro API handles the direct interaction with the blockchain. They will also be able to claim ownership of external addresses through their mobile app. This will streamline their ability to transact with Snowflake dApps without compromizing the security of the wallet stored locally in the memory of the Hydro app on their phones. They will be able to use these owned addresses to attach a broader range of metadata to their snowflake and interact with Resolvers who have implemented Hydro-based payment structures. 
 
 Business entities will be able to use the Hydro API to query the Ethereum blockchain for information contained within the Hydro ecosystem. The API will provide on-chain information to applications in a digestible format that can be easily encoded into their business logic without requiring them to have blockchain developers.
 
 ### Mirroring The ERC-721 Contract Standard
-ERC-20 tokens, such as HYDRO, share the characteristic of fungibility, meaning each token is seamlessly and equally interchangeable with any other. This makes sense for tokens in the ERC-20 standard since each token has the same functionality as any other token. For an identity protocol, however, non-fungibility drives the meaningfulness behind ownership. If we were able to swap our identities out amongst ourselves with no difference, those identities would carry no value to any observer. Ethereum Request for Comments 721, or ERC-721, is an Ethereum proposal introduced by Dieter Shirley in 2017. Although HYDRO the token itself is built on the ERC-20 standard, our Snowflake protocol’s smart contracts more closely mirror the dynamics found in ERC-721 tokens. These are known as “non-fungible” tokens.
+ERC-20 tokens, such as HYDRO, share the characteristic of fungibility, meaning each token is seamlessly and equally interchangeable with any other. This makes sense for tokens in the ERC-20 standard since each token has the same functionality as any other token. For an identity protocol, however, non-fungibility drives the meaningfulness behind ownership. If we were able to swap our identities out amongst ourselves with no difference, those identities would carry no value to any observer. Ethereum Request for Comments 721, or ERC-721, is an Ethereum proposal introduced by Dieter Shirley in 2017. Although the HYDRO token itself is built on the ERC-20 standard, our Snowflake protocol’s smart contracts more closely mirror the dynamics found in ERC-721 tokens. These are known as “non-fungible” tokens.
 
 The non-fungibility of each Snowflake is crucial to allowing users to prove ownership of the information associated with their identity. The value of the Snowflake identity is not that it can be exchanged for some monetary value, but because it has unique characteristics that build a user’s on-chain identity. With this in mind, we have moved slightly away from the ERC-721 standard to disallow transfer of ownership of an identity.
 
-A persistent concern in open-source and blockchain communities is the fragmentation of developer effort across multiple projects and standards. We are very aware of this risk, and have designed Snowflake in such a way as to make this eventuality as unlikely as possible. Our break from ERC-721 should not be taken as a criticism of this work, but rather a reflection of the simple reality that identities are anchored to their owners in a way that other unique and collectible tokens are not. Within this constraint, Snowflake was designed to be fundamentally modular and open; it can flexibly incorporate a wide variety of use cases and will serve as a common protocol for making identity-related claims.
+A persistent concern in open-source and blockchain communities is the fragmentation of developer effort across multiple projects and standards. We are very aware of this risk, and have designed Snowflake in such a way as to make this eventuality as unlikely as possible. Our break from ERC-721 should not be taken as a criticism of this work, but rather a reflection of the simple reality that identities are anchored to their owners in a way that other unique and collectible tokens are not. Within this constraint, Snowflake was designed to be fundamentally modular and open; it can flexibly incorporate a wide variety of use cases and will serve as a common protocol for making identity-related claims.
 
 ## Implications for Financial Services
 The open framework of Snowflake will make products, platforms, apps, and dApps built on top of the protocol integral to its long-term success. Below we examine some initial applications that the Hydro community will champion:
@@ -239,6 +219,7 @@ Through integration with global KYC providers as validators, Hydro can create a 
 
 ### Validator Rating System
 This simple dApp would create an upvoting/downvoting system for validators across multiple identity areas. A reputation-based scoring system would create incentive-driven honesty in votes. This decentralized reputation-building can prescribe greater meaning to some validators than a binary process.
+
 ### Machine Learning Validation Standard
 The Hydrogen platform contains the Ion AutoML API. With sufficient validations globally, a product can be created using the AutoML API that rates, sorts, ranks, flags, and removes validations and validators in a decentralized and data driven way. Smart contracts can be integrated on top of the AutoML capabilities for transparency.
 
@@ -280,39 +261,39 @@ _______________________________________________________________
 
 ## Sources
 
-PNAS.org - http://www.pnas.org/content/110/32/13216
+[PNAS](http://www.pnas.org/content/110/32/13216)
 
-Social Security Administration - https://www.ssa.gov/policy/docs/ssb/v69n2/v69n2p55.html
+[Social Security Administration](https://www.ssa.gov/policy/docs/ssb/v69n2/v69n2p55.html)
 
-History Channel - https://www.history.com/news/the-history-of-birth-certificates-is-shorter-than-you-might-think
+[History Channel](https://www.history.com/news/the-history-of-birth-certificates-is-shorter-than-you-might-think)
 
-Ancentry.com - https://blogs.ancestry.com/cm/what-can-your-surname-tell-you/
+[Ancestry](https://blogs.ancestry.com/cm/what-can-your-surname-tell-you/)
 
-CNN.com - https://www.cnn.com/2013/01/18/justice/florida-cuban-birth-certificates/index.html
+[CNN](https://www.cnn.com/2013/01/18/justice/florida-cuban-birth-certificates/index.html)
 
-Watchdog.org - https://www.watchdog.org/florida/those-with-fake-birth-certificates-find-it-s-easy-to/article_a3935cbf-74b8-5237-9b0a-ae17748f6786.html
+[Watchdog](https://www.watchdog.org/florida/those-with-fake-birth-certificates-find-it-s-easy-to/article_a3935cbf-74b8-5237-9b0a-ae17748f6786.html)
 
-Martin Private Investigators - http://www.martinpi.com/your-cell-phone-number-is-your-new-social-security-number/
+[Martin Private Investigators](http://www.martinpi.com/your-cell-phone-number-is-your-new-social-security-number/)
 
-Statista - https://www.statista.com/statistics/274774/forecast-of-mobile-phone-users-worldwide/;
-https://www.statista.com/statistics/188511/mobile-to-mobile-telephone-numbers-in-us-porting-database-since-2003/
+[Statista](https://www.statista.com/statistics/274774/forecast-of-mobile-phone-users-worldwide/;
+https://www.statista.com/statistics/188511/mobile-to-mobile-telephone-numbers-in-us-porting-database-since-2003/)
 
-Federal Register - https://www.federalregister.gov/documents/2017/11/27/2017-25458/nationwide-number-portability-numbering-policies-for-modern-communications
+[Federal Register](https://www.federalregister.gov/documents/2017/11/27/2017-25458/nationwide-number-portability-numbering-policies-for-modern-communications)
 
-Psychology Today - https://www.psychologytoday.com/us/blog/fulfillment-any-age/201609/is-why-we-cant-put-down-our-phones)
+[Psychology Today](https://www.psychologytoday.com/us/blog/fulfillment-any-age/201609/is-why-we-cant-put-down-our-phones)
 
-Symantec - https://www.symantec.com/content/dam/symantec/docs/reports/istr-22-2017-en.pdf
+[Symantec](https://www.symantec.com/content/dam/symantec/docs/reports/istr-22-2017-en.pdf)
 
-Chargebacks911 - https://chargebacks911.com/chargeback-stats-2017/
+[Chargebacks911](https://chargebacks911.com/chargeback-stats-2017/)
 
-Travel & Leisure - http://www.travelandleisure.com/airlines-airports/no-drivers-license-tsa-rule
+[Travel & Leisure](http://www.travelandleisure.com/airlines-airports/no-drivers-license-tsa-rule)
 
-Coindesk - https://www.coindesk.com/illinois-eyes-blockchain-for-ids-and-public-asset-management
+[Coindesk](https://www.coindesk.com/illinois-eyes-blockchain-for-ids-and-public-asset-management)
 
-Enterprise Innovation - https://www.enterpriseinnovation.net/article/how-are-governments-using-blockchain-technology-1122807855
+[Enterprise Innovation](https://www.enterpriseinnovation.net/article/how-are-governments-using-blockchain-technology-1122807855)
 
-W3.org - https://www.w3.org/DesignIssues/Metadata.html
+[W3](https://www.w3.org/DesignIssues/Metadata.html)
 
-PSU Meteorology - http://news.psu.edu/story/141325/2009/02/18/research/probing-question-each-snowflake-really-unique
+[PSU Meteorology](http://news.psu.edu/story/141325/2009/02/18/research/probing-question-each-snowflake-really-unique)
 
-Wikipedia Cryptography - 	https://en.wikipedia.org/wiki/Salt_(cryptography)
+[Wikipedia Cryptography](https://en.wikipedia.org/wiki/Salt_(cryptography))
