@@ -275,8 +275,9 @@ _______________________________________________________________
 
 [Martin Private Investigators](http://www.martinpi.com/your-cell-phone-number-is-your-new-social-security-number/)
 
-[Statista](https://www.statista.com/statistics/274774/forecast-of-mobile-phone-users-worldwide/;
-https://www.statista.com/statistics/188511/mobile-to-mobile-telephone-numbers-in-us-porting-database-since-2003/)
+[Statista](https://www.statista.com/statistics/274774/forecast-of-mobile-phone-users-worldwide/)
+
+[Statista (2)](https://www.statista.com/statistics/188511/mobile-to-mobile-telephone-numbers-in-us-porting-database-since-2003/)
 
 [Federal Register](https://www.federalregister.gov/documents/2017/11/27/2017-25458/nationwide-number-portability-numbering-policies-for-modern-communications)
 
