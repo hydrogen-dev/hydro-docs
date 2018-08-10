@@ -27,10 +27,12 @@ Please sign up for the dedicated Slack channel for DAs (link provided separately
 ## About Hydro - Frequently Asked Questions
 
 **Q: What is Hydro?**
+
 **A:**
 Hydro aims to decentralize financial services by bringing the public blockchain to traditionally private systems. It allows developers around the world to enhance their platforms and applications by leveraging blockchain technology. Below is an overview of Hydro’s features.
 
 **Q: What are Hydro’s current products?**
+
 **A:**
 Server-side Raindrop: Authentication layer to secure large databases and APIs that forces a completion of an on-chain micro-transaction before granting access to a private system. Leaves an immutable paper-trail of access attempts, helps prevent data breaches and identify breach attempts.
 Client-side Raindrop: Authentication layer optimized for securing user accounts. Similar to U2F authentication; biggest value-add here is that it prevents the need for a user to pass a website an entire public key to implement U2F authentication on a mobile device. U2F uses public key cryptography, unlike the shared secret used in most user-facing authentication protocols. Also, the Client-Raindrop smart contract generates a unique HydroID for each user, which is a gateway into using the broader suite of Hydro smart contracts.
@@ -40,14 +42,17 @@ This means no single identity standard needs to be accepted globally; any number
 Snowflake is based on a non-fungible token ownership model, similar to the ERC-721 standard.
 
 **Q: What are the tokenomics?**
+
 **A:**
 Tokens are required to call functions on our Smart Contract and build products in the Hydro ecosystem. For Server-side Raindrop, an on-chain micro transaction must be conducted in Hydro before access to a system is granted. For Client-side Raindrop, any party that wishes to onboard users into the Hydro ecosystem by creating HydroIDs must maintain a balance of Hydro. For snowflake, in order for new resolvers entering the ecosystem to leverage the network effect of existing resolvers, they must use a certain sum of Hydro tokens upon deployment. Further, snowflake includes native token-transfer functionality that enables developers to easily and rapidly develop dApps that directly interact with users through token transfers.
 
 **Q: When was Hydro’s ICO?**
+
 **A:**
 Hydro did not do an ICO, all tokens were airdropped on February 16th, 2018 for developers who signed up on the Hydrogen site.
 
 **Q: Who are Hydro’s Competitors?**
+
 **A:**
 Due to the wide range of Hydro products, Hydro competes with a variety of projects in many ways. In general, though, Hydro competes with centralized financial services infrastructure, and entities that aim to leverage private or permissioned blockchain technologies to create products in the financial services face. Hydro carries the vision that the benefits of transparency and individual autonomy are essential to the impact that blockchain will have in the financial services space, and can only be achieved using public blockchain technology.
 
