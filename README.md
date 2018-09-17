@@ -6,4 +6,4 @@ As the Hydro ecosystem continues to evolve, the global development community wil
 
 A final version of the [Raindrop Whitepaper](./Raindrop) is complete. Drafts of the [Snowflake Whitepaper](./Snowflake) and [Ice Whitepaper](./Ice) are posted and available for review and comment by the global Hydro community. In the future, you can look forward to the Tide and Mist whitepapers. The global Hydro community may even have a few more products that are yet to be announced 😏.
 
-**Documentation for the Hydro API has been [moved here](https://www.hydrogenplatform.com/docs/hydro/v1)**
+**API Reference for the Hydro API can be [found here](https://www.hydrogenplatform.com/docs/hydro/v1)**
