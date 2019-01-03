@@ -286,7 +286,7 @@ The final stage in the process is the validation of the User's signed message. T
 ![Client-Side Raindrop: Validation](./_assets/Client-SideRaindrop_Validation.png)
 
 ### Opening Raindrop To The Public
-While these blockchain-based authentication frameworks were initially architected to help secure the Hydrogen API ecosystem, they are widely applicable to many different kinds of platforme. Because we feel that others can potentially benefit, we are opening it up for use.
+While these blockchain-based authentication frameworks were initially architected to help secure the Hydrogen API ecosystem, they are widely applicable to many different kinds of platforms. Because we feel that others can potentially benefit, we are opening it up for use.
 
 Just as Hydrogen will integrate the Raindrop technology, any platform can add it to existing procedures and protocols. Formal documentation is available for those who wish to incorporate this blockchain layer to make their systems more secure, and Hydro more generally is developed with openness in mind. We invite developers around the world to contribute new ideas, extend our protocols, and innovate with novel use cases for the Hydro technology for financial services and beyond.
 
